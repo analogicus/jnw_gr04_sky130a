@@ -107,7 +107,9 @@ C {devices/res.sym} -290 -290 0 0 {name=R1
 value=12k
 footprint=1206
 device=resistor
-m=13
+m=7
+
+
 }
 C {devices/iopin.sym} 380 -180 0 0 {name=p5 lab=Vo
 }
