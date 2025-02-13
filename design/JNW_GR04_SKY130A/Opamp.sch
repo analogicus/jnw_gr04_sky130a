@@ -111,7 +111,5 @@ m=13
 }
 C {devices/iopin.sym} 380 -180 0 0 {name=p5 lab=Vo
 }
-C {devices/lab_wire.sym} 360 -130 0 0 {name=p6 sig_type=std_logic lab=Vout
-}
 C {devices/lab_wire.sym} -290 -330 0 0 {name=p7 sig_type=std_logic lab=Vbias
 }
