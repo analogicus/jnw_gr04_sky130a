@@ -11,7 +11,13 @@
 
 vd1_out:
   src:
-    - vd1_0
+    - vd1_-40
+    - vd1_-20 
+    - vd1_0 
+    - vd1_20 
+    - vd1_40 
+    - vd1_80 
+    - vd1_125
   name: VD1 voltage
   scale: 1
   digits: 5
@@ -19,7 +25,13 @@ vd1_out:
 
 vd2_out:
   src:
+    - vd2_-40 
+    - vd2_-20 
     - vd2_0
+    - vd2_20
+    - vd2_40
+    - vd2_80
+    - vd2_125
   name: VD2 voltage
   scale: 1
   digits: 5
