@@ -15,7 +15,7 @@ def main(name):
   temperatures = [-40, -20, 0, 20, 40, 80, 125]
   vd1_values = data[['vd1_-40', 'vd1_-20', 'vd1_0', 'vd1_20', 'vd1_40', 'vd1_80', 'vd1_125']].values[0]
   vd2_values = data[['vd2_-40', 'vd2_-20', 'vd2_0', 'vd2_20', 'vd2_40', 'vd2_80', 'vd2_125']].values[0]
-  diff_values = vd1_values - vd2_values
+  diff_values = vd2_values - vd1_values
 
   # Plot the graph
   plt.figure(figsize=(8, 5))
