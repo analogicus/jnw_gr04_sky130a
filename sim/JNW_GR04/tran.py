@@ -3,6 +3,7 @@ import pandas as pd
 import yaml
 import cicsim as cs
 import matplotlib.pyplot as plt
+import numpy as np
 
 def main(name):
   import pandas as pd
