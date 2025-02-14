@@ -6,11 +6,11 @@
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
 # Who
-Michal
+Group 4, Michal, Siver, Marte, Halvor
 
 # Why
 
-<explain why you made this module>
+For a better future
 
 # How
 
