@@ -21,8 +21,8 @@
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
-V0  VDD  VSS  dc {AVDD}
-V1  VSS  0    dc 0
+VDD  VDD  VSS  dc {AVDD}
+VSS  VSS  0    dc 0
 
 * Biasing the non-inverting input to a DC common-mode voltage
 Vcm VIP VSS  dc {VCM}
@@ -40,7 +40,6 @@ Vac  VIN  VSS  ac 1mV
 *----------------------------------------------------------------
 .save all
 *.save v(Vo) v(VIP) v(VIN)
-
 *----------------------------------------------------------------
 * NGSPICE control
 *----------------------------------------------------------------
@@ -48,13 +47,9 @@ Vac  VIN  VSS  ac 1mV
 set num_threads=8
 set color0=white
 set color1=black
-unset askquit
+unset askquit 
 
-* DC Operating Point Analysis
-*op
-*print v(VIP) v(VIN) v(Vo)
-
-tran 10n 5u
+tran 10n 10u
 
 
 * AC Analysis: Sweep frequency from 1 Hz to 1 GHz
