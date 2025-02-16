@@ -14,7 +14,16 @@ For a better future
 
 # How
 
-<explain short how you made this module>
+Designed Opamp based on design shown in class
+Designed temperature sensing circuit based on design shown in class
+Spend a long time figuring out github workflows and linux
+
+![Current vs. temperature](sim/JNW_GR04/current_vs_temperature.png)
+
+# Problems present
+Figure out how to measure current, and do operating point analysis on opamp transistors.
+The transistors in the opamp have been chosen to match the current ratio between the mirrors. Appropriate R1 value has to be found in order to get transistors in active area
+Not much thought has been given to transistors in JNW_GR04 circuit. Need to ensure that these are in active region aswell.
 
 
 # What
@@ -47,4 +56,4 @@ For a better future
 | :---                | :---:     | :---:           | :---:     | :---: |
 | Technology          |         | Skywater 130 nm |         |       |
 | AVDD                | 1.7    | 1.8           | 1.9    | V     |
-| Temperature         | -40     | 27            | 125     | C     |
+| Temperature         | -40     | 27            | 120     | C     |
