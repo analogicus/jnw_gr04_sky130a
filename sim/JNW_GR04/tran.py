@@ -12,7 +12,7 @@ def main(name):
   temperatures = [-40, -20, 0, 20, 40, 80, 125]
 
   # Compute current (I = (Vd1 - Vd2) / 10k)
-  currents = [(data[f'vd1_{temp}'] - data[f'vd2_{temp}']) / 10_000 for temp in temperatures]
+  currents = [(data[f'vd1_{temp}'] - data[f'vd2_{temp}']) / 10_000 * 1e6 for temp in temperatures]
 
   # Convert to a list for plotting
   currents = [i.values[0] for i in currents]
@@ -21,7 +21,7 @@ def main(name):
   plt.figure(figsize=(8, 5))
   plt.plot(temperatures, currents, marker='o', linestyle='-')
   plt.xlabel("Temperature (°C)")
-  plt.ylabel("Current (A)")
+  plt.ylabel("Current (µA)")
   plt.title("Current vs Temperature")
   plt.grid()
 
