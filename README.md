@@ -6,7 +6,7 @@
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
 # Who
-Halvor, Marte, Siver, Michal
+Group 4, Michal, Siver, Marte, Halvor
 
 # Why
 
