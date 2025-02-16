@@ -9,14 +9,14 @@
 #  digits: <significant digits>
 #  unit: Unit
 
-vd1_out:
-  src:
+vd1_out:  
+  src:   
     - vd1_-40
     - vd1_-20 
     - vd1_0 
     - vd1_20 
     - vd1_40 
-    - vd1_80 
+    - vd1_80
     - vd1_125
   name: VD1 voltage
   scale: 1

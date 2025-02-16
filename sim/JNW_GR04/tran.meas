@@ -11,7 +11,7 @@ foreach vtemp -40 -20 0 20 40 80 125
 	load {cicname}_$vtemp$fend
 
 	meas tran VD1_$vtemp find V(xdut.vd1_out) at=50n
-	meas tran VD2_$vtemp find V(xdut.vd2_out) at=50n
+	meas tran VD2_$vtemp find v(xdut.vd2_out) at=50n
 end
 echo "MEAS_END"
 .endc

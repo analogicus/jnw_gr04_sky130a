@@ -5,30 +5,28 @@ import cicsim as cs
 import matplotlib.pyplot as plt
 
 def main(name):
-  import pandas as pd
-  import matplotlib.pyplot as plt
+    # Load CSV file
+  data = pd.read_csv("results/tran_Sch_typical.csv")  # Replace with the actual filename
 
-  # Load the CSV file
-  data = pd.read_csv('results/tran_Sch_typical.csv')
-
-  # Define temperatures and compute voltage difference
+  # Extract temperatures from column names
   temperatures = [-40, -20, 0, 20, 40, 80, 125]
-  vd1_values = data[['vd1_-40', 'vd1_-20', 'vd1_0', 'vd1_20', 'vd1_40', 'vd1_80', 'vd1_125']].values[0]
-  vd2_values = data[['vd2_-40', 'vd2_-20', 'vd2_0', 'vd2_20', 'vd2_40', 'vd2_80', 'vd2_125']].values[0]
-  diff_values = vd2_values - vd1_values
 
-  # Plot the graph
+  # Compute current (I = (Vd1 - Vd2) / 10k)
+  currents = [(data[f'vd1_{temp}'] - data[f'vd2_{temp}']) / 10_000 for temp in temperatures]
+
+  # Convert to a list for plotting
+  currents = [i.values[0] for i in currents]
+
+  # Plot
   plt.figure(figsize=(8, 5))
-  plt.plot(temperatures, diff_values, marker='o', linestyle='-', color='b', label='Vd1 - Vd2')
-  plt.xlabel('Temperature (°C)')
-  plt.ylabel('Voltage Difference (V)')
-  plt.title('Voltage Difference vs Temperature')
-  plt.legend()
-  plt.grid(True)
+  plt.plot(temperatures, currents, marker='o', linestyle='-')
+  plt.xlabel("Temperature (°C)")
+  plt.ylabel("Current (A)")
+  plt.title("Current vs Temperature")
+  plt.grid()
 
   # Save the plot as a PNG file
-  plt.savefig('voltage_difference.png')
-  # Delete next line if you want to use python post processing
+  plt.savefig("current_vs_temperature.png")
   yamlfile = name + ".yaml"
 
   # Read result yaml file
