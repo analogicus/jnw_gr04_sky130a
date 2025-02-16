@@ -6,16 +6,28 @@
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
 # Who
-Michal
+Halvor, Marte, Siver, Michal
 
 # Why
 
-<explain why you made this module>
+Milestone 1 AIC
 
 # How
 
-<explain short how you made this module>
+Designed Opamp based on design shown in class
+Designed temperature sensing circuit based on design shown in class
+Spend a long time figuring out github workflows and linux
 
+![Current vs. temperature](sim/JNW_GR04/current_vs_temperature.png)
+
+# Problems present
+The circuit shows linearity from -25 degrees to 125 degrees, at -40 something strange happens
+Simulation not set up to read current, current is calculated based on voltage difference over R1 using python
+
+# Ways to fix
+Figure out how to measure current, and do operating point analysis on opamp transistors.
+The transistors in the opamp have been chosen to match the current ratio between the mirrors. Appropriate R1 value has to be found in order to get transistors in active area
+Not much thought has been given to transistors in JNW_GR04 circuit. Need to ensure that these are in active region aswell.
 
 # What
 
