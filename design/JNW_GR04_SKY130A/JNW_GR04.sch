@@ -32,10 +32,8 @@ N -40 -310 -40 -80 {lab=VSS}
 N -250 -420 -250 -180 {lab=#net3}
 N -250 -450 270 -450 {lab=#net3}
 N -380 -180 -380 -150 {lab=VSS}
-N 310 -110 310 -80 {lab=VSS}
 N 310 -200 310 -170 {lab=VD2_out}
 N -190 -330 -190 -270 {lab=#net2}
-N -190 -210 -190 -80 {lab=VSS}
 N 270 -420 270 -340 {lab=#net3}
 N 220 -340 270 -340 {lab=#net3}
 N -250 -450 -250 -420 {lab=#net3}
@@ -48,8 +46,6 @@ N -150 -280 -150 -240 {lab=#net2}
 N -190 -280 -150 -280 {lab=#net2}
 N 350 -180 350 -140 {lab=VD2_out}
 N 310 -180 350 -180 {lab=VD2_out}
-N 310 -140 310 -110 {lab=VSS}
-N -190 -240 -190 -210 {lab=VSS}
 N -380 -660 -380 -570 {lab=VDD_1V8}
 N -410 -590 -380 -590 {lab=VDD_1V8}
 N -410 -590 -410 -540 {lab=VDD_1V8}
@@ -57,31 +53,34 @@ N -410 -540 -380 -540 {lab=VDD_1V8}
 N -190 -330 -40 -330 {lab=#net2}
 N -110 -320 -110 -270 {lab=VD1_out}
 N -110 -350 -110 -320 {lab=VD1_out}
-C {cborder/border_s.sym} 530 -30 0 0 {
-user="wulff"
-company="wulff"}
+N 310 -110 310 -80 {lab=VSS}
+N -190 -210 -190 -80 {lab=VSS}
+N 290 -230 290 -80 {lab=VSS}
 C {devices/ipin.sym} -420 -80 0 0 {name=p2 lab=VSS}
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -340 -180 0 1 {name=x2 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 270 -540 0 0 {name=x3 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -150 -540 0 1 {name=x4 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -340 -540 0 1 {name=x5 }
-C {devices/res.sym} 310 -230 0 0 {name=R1
-value=10k
-footprint=1206
-device=resistor
-m=1}
 C {devices/capa.sym} -250 -130 0 0 {name=C1
 m=1
 value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {JNW_GR04_SKY130A/Opamp.sym} 110 -340 0 0 {name=x1}
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -150 -240 0 1 {name=x6 }
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 350 -140 0 1 {name=x7[8:0]
- }
 C {devices/lab_wire.sym} 300 -270 0 0 {name=p3 sig_type=std_logic lab=VD1_out
 }
 C {devices/lab_wire.sym} 310 -190 0 0 {name=p6 sig_type=std_logic lab=VD2_out
 }
 C {devices/ipin.sym} -460 -660 0 0 {name=p1 lab=VDD_1V8
 }
+C {sky130_fd_pr/pnp_05v5.sym} 330 -140 0 1 {name=Q1
+model=pnp_05v5_W3p40L3p40
+m=10
+spiceprefix=X
+}
+C {sky130_fd_pr/pnp_05v5.sym} -170 -240 0 1 {name=Q2
+model=pnp_05v5_W3p40L3p40
+m=1
+spiceprefix=X
+}
+C {JNW_TR_SKY130A/JNWTR_RPPO16.sym} 310 -190 1 1 {name=x6 }

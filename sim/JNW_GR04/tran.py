@@ -3,6 +3,7 @@ import pandas as pd
 import yaml
 import cicsim as cs
 import matplotlib.pyplot as plt
+import numpy as np
 
 def main(name):
     # Load CSV file
@@ -25,6 +26,8 @@ def main(name):
   plt.title("Current vs Temperature")
   plt.grid()
 
+  temp_range = np.arange(min(temperatures), max(temperatures) + 1, 5)
+  plt.xticks(temp_range)
   # Save the plot as a PNG file
   plt.savefig("current_vs_temperature.png")
   yamlfile = name + ".yaml"

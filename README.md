@@ -5,6 +5,9 @@
 [![DOCS](../../actions/workflows/docs.yaml/badge.svg)](../../actions/workflows/docs.yaml)
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
+# IMPORTANT!!
+Branch Siver contains a different approach using bjt transistors instead of mosfets, this setup show extremely good linearity
+
 # Who
 Group 4, Michal, Siver, Marte, Halvor
 
