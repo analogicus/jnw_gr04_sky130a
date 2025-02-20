@@ -18,10 +18,13 @@ def main(name):
   # Generate column names dynamically
   vd1_columns = [f'vd1_{temp}' for temp in temperatures]
   vd2_columns = [f'vd2_{temp}' for temp in temperatures]
+  #i_vd1_columns = [f'i_vd1_{temp}' for temp in temperatures]
+
 
   # Extract values and compute difference
   vd1_values = data[vd1_columns].values[0]
   vd2_values = data[vd2_columns].values[0]
+  #i_vd1_values = data[i_vd1_columns].values[0]
   diff_values = vd1_values - vd2_values
 
   # Polynomial fitting (quadratic fit)
@@ -35,6 +38,7 @@ def main(name):
 
   # Plot data and fit
   plt.plot(temperatures, diff_values, 'bo-', label='Measured Data')
+  #plt.plot(temperatures, i_vd1_values, 'bo-', label='Measured Data')
   temp_range = np.linspace(min(temperatures), max(temperatures), 100)
   plt.plot(temp_range, poly_eq(temp_range), 'r--', label='Quadratic Fit')
 

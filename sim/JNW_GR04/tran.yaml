@@ -88,3 +88,44 @@ vd2_out:
   scale: 1
   digits: 5
   unit: V
+
+# i_vd1_out:
+#  src:
+#    - i_vd1_-40
+#    - i_vd1_-35
+#   - i_vd1_-30
+#   - i_vd1_-25
+#  - i_vd1_-20
+#    - i_vd1_-15
+#    - i_vd1_-10
+#    - i_vd1_-5 
+#    - i_vd1_0
+#    - i_vd1_5
+#    - i_vd1_10
+#    - i_vd1_15 
+#    - i_vd1_20
+#    - i_vd1_25
+#    - i_vd1_30
+#    - i_vd1_35 
+#    - i_vd1_40
+#    - i_vd1_45
+#   - i_vd1_50
+#    - i_vd1_55
+#    - i_vd1_60
+#    - i_vd1_65
+#    - i_vd1_70
+#    - i_vd1_75 
+#    - i_vd1_80
+#    - i_vd1_85
+#    - i_vd1_90
+#    - i_vd1_95
+#    - i_vd1_100
+#    - i_vd1_105
+#    - i_vd1_110
+#    - i_vd1_115 
+#    - i_vd1_120
+#  name: I_VD1 current
+#  scale: 1
+#  digits: 5
+#  unit: I
+#

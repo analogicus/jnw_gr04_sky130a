@@ -22,14 +22,14 @@ N -420 -80 300 -80 {lab=VSS}
 N -250 -100 -250 -80 {lab=VSS}
 N -340 -180 -250 -180 {lab=#net2}
 N -250 -180 -250 -160 {lab=#net2}
-N -110 -350 -40 -350 {lab=VD1_out}
-N 310 -510 310 -260 {lab=VD1_out}
+N -110 -350 -40 -350 {lab=VD1_OUT}
+N 310 -510 310 -260 {lab=VD1_OUT}
 N 300 -80 310 -80 {lab=VSS}
 N -40 -310 -40 -80 {lab=VSS}
 N -250 -420 -250 -180 {lab=#net2}
 N -250 -450 270 -450 {lab=#net2}
 N -380 -180 -380 -150 {lab=VSS}
-N -110 -350 -110 -270 {lab=VD1_out}
+N -110 -350 -110 -270 {lab=VD1_OUT}
 N 270 -420 270 -340 {lab=#net2}
 N 220 -340 270 -340 {lab=#net2}
 N -250 -450 -250 -420 {lab=#net2}
@@ -38,11 +38,11 @@ N -380 -660 -380 -570 {lab=VDD_1V8}
 N 330 -230 380 -230 {lab=VSS}
 N 380 -230 380 -80 {lab=VSS}
 N 310 -80 380 -80 {lab=VSS}
-N -110 -270 -110 -220 {lab=VD1_out}
-N -110 -220 100 -220 {lab=VD1_out}
-N 100 -220 140 -220 {lab=VD1_out}
-N 140 -280 310 -280 {lab=VD1_out}
-N 310 -190 310 -170 {lab=VD2_out}
+N -110 -270 -110 -220 {lab=VD1_OUT}
+N -110 -220 100 -220 {lab=VD1_OUT}
+N 100 -220 140 -220 {lab=VD1_OUT}
+N 140 -280 310 -280 {lab=VD1_OUT}
+N 310 -190 310 -170 {lab=VD2_OUT}
 N 310 -110 310 -80 {lab=VSS}
 N -170 -330 -170 -170 {lab=#net3}
 N -130 -140 270 -140 {lab=VSS}
@@ -54,7 +54,7 @@ N -170 -330 -40 -330 {lab=#net3}
 N -170 -660 -170 -570 {lab=VDD_1V8}
 N -380 -480 -380 -210 {lab=#net1}
 N -170 -570 -170 -540 {lab=VDD_1V8}
-N 140 -280 140 -220 {lab=VD1_out}
+N 140 -280 140 -220 {lab=VD1_OUT}
 C {cborder/border_s.sym} 530 -30 0 0 {
 user="wulff"
 company="wulff"}
@@ -69,10 +69,6 @@ value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {JNW_GR04_SKY130A/Opamp.sym} 110 -340 0 0 {name=x1}
-C {devices/lab_wire.sym} 310 -280 0 0 {name=p3 sig_type=std_logic lab=VD1_out
-}
-C {devices/lab_wire.sym} 310 -190 0 0 {name=p6 sig_type=std_logic lab=VD2_out
-}
 C {devices/ipin.sym} -460 -660 0 0 {name=p1 lab=VDD_1V8
 }
 C {JNW_TR_SKY130A/JNWTR_RPPO16.sym} 310 -270 3 1 {name=x7 }
@@ -85,4 +81,8 @@ C {sky130_fd_pr/pnp_05v5.sym} -150 -140 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 m=10
 spiceprefix=X
+}
+C {devices/iopin.sym} 310 -280 0 0 {name=p3 lab=VD1_OUT
+}
+C {devices/iopin.sym} 310 -180 0 0 {name=p4 lab=VD2_OUT
 }

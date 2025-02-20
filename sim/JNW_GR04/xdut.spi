@@ -1,2 +1,2 @@
 *Automatic generated instance fron ../../tech/scripts/genxdut JNW_GR04
-XDUT VSS VDD_1V8  JNW_GR04
+XDUT VSS VDD_1V8 VD1_OUT VD2_OUT  JNW_GR04

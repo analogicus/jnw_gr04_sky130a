@@ -81,6 +81,9 @@ N -200 -380 -200 -340 {lab=Vbias}
 N 360 -180 380 -180 {lab=Vo}
 N -160 -210 -40 -210 {lab=VDD}
 N -40 -460 -40 -210 {lab=VDD}
+N -270 -280 -240 -280 {lab=VSS}
+N -240 -280 -240 -220 {lab=VSS}
+N -290 -220 -240 -220 {lab=VSS}
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 20 -40 0 1 {name=x1 }
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -230 -40 0 0 {name=x4 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} -230 -210 0 0 {name=x3 }
@@ -103,15 +106,8 @@ C {devices/ipin.sym} 60 -210 0 1 {name=p3 lab=VIN
 }
 C {devices/ipin.sym} 400 50 0 1 {name=p4 lab=VSS
 }
-C {devices/res.sym} -290 -290 0 0 {name=R1
-value=12k
-footprint=1206
-device=resistor
-m=7
-
-
-}
 C {devices/iopin.sym} 380 -180 0 0 {name=p5 lab=Vo
 }
 C {devices/lab_wire.sym} -290 -330 0 0 {name=p7 sig_type=std_logic lab=Vbias
 }
+C {JNW_TR_SKY130A/JNWTR_RPPO16.sym} -290 -320 3 1 {name=x5 }
