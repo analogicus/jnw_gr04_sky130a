@@ -55,9 +55,14 @@ N -170 -660 -170 -570 {lab=VDD_1V8}
 N -380 -480 -380 -210 {lab=#net1}
 N -170 -570 -170 -540 {lab=VDD_1V8}
 N 140 -280 140 -220 {lab=VD1_OUT}
-C {cborder/border_s.sym} 530 -30 0 0 {
-user="wulff"
-company="wulff"}
+N 310 -660 500 -660 {lab=VDD_1V8}
+N 500 -660 500 -560 {lab=VDD_1V8}
+N 400 -540 460 -540 {lab=#net1}
+N 400 -610 400 -540 {lab=#net1}
+N 220 -610 400 -610 {lab=#net1}
+N 220 -610 220 -540 {lab=#net1}
+N 500 -570 500 -540 {lab=VDD_1V8}
+N 500 -510 500 -460 {lab=I_OUT}
 C {devices/ipin.sym} -420 -80 0 0 {name=p2 lab=VSS}
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -340 -180 0 1 {name=x2 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 270 -540 0 0 {name=x3 }
@@ -74,15 +79,18 @@ C {devices/ipin.sym} -460 -660 0 0 {name=p1 lab=VDD_1V8
 C {JNW_TR_SKY130A/JNWTR_RPPO16.sym} 310 -270 3 1 {name=x7 }
 C {sky130_fd_pr/pnp_05v5.sym} 290 -140 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
-m=1
+m=10
 spiceprefix=X
 }
 C {sky130_fd_pr/pnp_05v5.sym} -150 -140 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
-m=10
+m=1
 spiceprefix=X
 }
 C {devices/iopin.sym} 310 -280 0 0 {name=p3 lab=VD1_OUT
 }
 C {devices/iopin.sym} 310 -180 0 0 {name=p4 lab=VD2_OUT
+}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 460 -540 0 0 {name=x6 }
+C {devices/iopin.sym} 500 -460 0 0 {name=p5 lab=I_OUT
 }

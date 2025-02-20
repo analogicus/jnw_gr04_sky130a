@@ -25,7 +25,7 @@
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
 VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
-*I1_OUT VD1_OUT 0 dc 0
+V_OUT I_OUT 0 dc 0.5
 *I2_OUT VD2_OUT 0 dc 0
 
 
@@ -39,6 +39,7 @@ VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
 * PROBE
 *----------------------------------------------------------------
 .save all
+.option savecurrents
 .save V(VD1_OUT)
 .save V(VD2_OUT)
 
