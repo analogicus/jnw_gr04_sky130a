@@ -44,13 +44,13 @@ N 100 -220 140 -220 {lab=VD1_OUT}
 N 140 -280 310 -280 {lab=VD1_OUT}
 N 310 -190 310 -170 {lab=VD2_OUT}
 N 310 -110 310 -80 {lab=VSS}
-N -170 -330 -170 -170 {lab=#net3}
+N -170 -330 -170 -170 {lab=VIP}
 N -130 -140 270 -140 {lab=VSS}
 N -170 -110 -170 -80 {lab=VSS}
 N 80 -140 80 -130 {lab=VSS}
 N 80 -130 80 -80 {lab=VSS}
-N -170 -510 -170 -330 {lab=#net3}
-N -170 -330 -40 -330 {lab=#net3}
+N -170 -510 -170 -330 {lab=VIP}
+N -170 -330 -40 -330 {lab=VIP}
 N -170 -660 -170 -570 {lab=VDD_1V8}
 N -380 -480 -380 -210 {lab=#net1}
 N -170 -570 -170 -540 {lab=VDD_1V8}
@@ -94,3 +94,4 @@ C {devices/iopin.sym} 310 -180 0 0 {name=p4 lab=VD2_OUT
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 460 -540 0 0 {name=x6 }
 C {devices/iopin.sym} 500 -460 0 0 {name=p5 lab=I_OUT
 }
+C {devices/lab_wire.sym} -170 -330 0 0 {name=p6 sig_type=std_logic lab=VIP}
