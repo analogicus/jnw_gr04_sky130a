@@ -18,7 +18,8 @@ Designed Opamp based on design shown in class
 Designed temperature sensing circuit based on design shown in class
 Spend a long time figuring out github workflows and linux
 
-![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
+![Voltage vs. temperature](sim/JNW_GR04/voltage_difference.png)
+![Current vs. temperature](sim/JNW_GR04/output_current.png)
 
 # Problems present
 Figure out how to measure current, and do operating point analysis on opamp transistors.
