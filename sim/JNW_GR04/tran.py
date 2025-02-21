@@ -18,13 +18,13 @@ def main(name):
   # Generate column names dynamically
   vd1_columns = [f'vd1_{temp}' for temp in temperatures]
   vd2_columns = [f'vd2_{temp}' for temp in temperatures]
-  #i_vd1_columns = [f'i_vd1_{temp}' for temp in temperatures]
+  i_out_columns = [f'i_out_{temp}' for temp in temperatures]
 
 
   # Extract values and compute difference
   vd1_values = data[vd1_columns].values[0]
   vd2_values = data[vd2_columns].values[0]
-  #i_vd1_values = data[i_vd1_columns].values[0]
+  i_out_values = data[i_out_columns].values[0]
   diff_values = vd1_values - vd2_values
 
   # Polynomial fitting (quadratic fit)
@@ -32,13 +32,15 @@ def main(name):
   poly_eq = np.poly1d(poly_coeffs)
   poly_str = f"{poly_coeffs[0]:.4e}ΔT² + {poly_coeffs[1]:.4e}ΔT + {poly_coeffs[2]:.4e}"
 
+
+#------------- PLOT VOLTAGE DIFFERENCE -------------------
   # Create plot
   plt.figure(figsize=(10, 6), dpi=150)
   plt.grid(True, linestyle='--', alpha=0.6)
 
   # Plot data and fit
-  plt.plot(temperatures, diff_values, 'bo-', label='Measured Data')
-  #plt.plot(temperatures, i_vd1_values, 'bo-', label='Measured Data')
+  plt.plot(temperatures, diff_values, 'bo-', label='Measured Voltage')
+  #plt.plot(temperatures, i_out_values, 'bo-', label='Measured Current')
   temp_range = np.linspace(min(temperatures), max(temperatures), 100)
   plt.plot(temp_range, poly_eq(temp_range), 'r--', label='Quadratic Fit')
 
@@ -57,6 +59,21 @@ def main(name):
   plt.legend(loc='upper right')
   plt.savefig('voltage_difference.png', dpi=300, bbox_inches='tight')
   plt.show()
+
+#---------------------- PLOT CURRENT --------------------------
+  plt.figure(figsize=(10, 6), dpi=150)
+  plt.grid(True, linestyle='--', alpha=0.6)
+  
+  plt.plot(temperatures, i_out_values, 'bo-', label='Measured Current')
+  
+  plt.xlabel('Temperature (°C)', fontsize=12)
+  plt.ylabel('Current (A)', fontsize=12)
+  plt.title('Output current vs Temperature with Polynomial Fit', fontsize=14)
+  
+  plt.legend(loc='upper right')
+  plt.savefig('output_current.png', dpi=300, bbox_inches='tight')
+  plt.show()
+
 
   # YAML handling (keep existing functionality)
   yamlfile = name + ".yaml"

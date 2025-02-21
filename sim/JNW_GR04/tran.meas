@@ -12,7 +12,7 @@ foreach vtemp -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 6
 
 	meas tran VD1_$vtemp find V(VD1_OUT) at=50n
 	meas tran VD2_$vtemp find V(VD2_OUT) at=50n
-	*meas tran I_VD1_$vtemp find I(I1_OUT) at=50n
+	meas tran I_OUT_$vtemp find I(V_OUT) at=50n
 	*meas tran VD1_$vtemp find V(xdut.vd1_out) at=50n
 	*meas tran VD2_$vtemp find V(xdut.vd2_out) at=50n
 	
