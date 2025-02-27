@@ -1,0 +1,72 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 800 -710 800 -680 {lab=VSS}
+N 620 -710 620 -680 {lab=VSS}
+N 840 -740 900 -740 {lab=#net1}
+N 860 -800 860 -740 {lab=#net1}
+N 800 -800 860 -800 {lab=#net1}
+N 800 -840 800 -770 {lab=#net1}
+N 520 -740 580 -740 {lab=#net2}
+N 560 -800 560 -740 {lab=#net2}
+N 560 -800 620 -800 {lab=#net2}
+N 620 -840 620 -770 {lab=#net2}
+N 480 -710 480 -680 {lab=VSS}
+N 620 -940 620 -900 {lab=#net3}
+N 620 -940 800 -940 {lab=#net3}
+N 800 -940 800 -900 {lab=#net3}
+N 840 -870 880 -870 {lab=In1}
+N 540 -870 580 -870 {lab=In2}
+N 720 -980 720 -940 {lab=#net3}
+N 640 -1040 680 -1040 {lab=#net4}
+N 720 -1010 720 -980 {lab=#net3}
+N 660 -1040 660 -1000 {lab=#net4}
+N 600 -1000 660 -1000 {lab=#net4}
+N 600 -1010 600 -1000 {lab=#net4}
+N 600 -1070 720 -1070 {lab=VDD}
+N 580 -1000 600 -1000 {lab=#net4}
+N 480 -1000 500 -1000 {lab=VSS}
+N 980 -980 1040 -980 {lab=#net5}
+N 1080 -950 1080 -750 {lab=Output}
+N 1040 -750 1080 -750 {lab=Output}
+N 1080 -860 1150 -860 {lab=Output}
+N 1040 -690 1040 -660 {lab=VSS}
+N 900 -740 980 -740 {lab=#net1}
+N 980 -740 980 -720 {lab=#net1}
+N 980 -720 1000 -720 {lab=#net1}
+N 940 -950 940 -880 {lab=#net5}
+N 1000 -980 1000 -920 {lab=#net5}
+N 940 -920 1000 -920 {lab=#net5}
+N 940 -880 940 -820 {lab=#net5}
+N 480 -820 940 -820 {lab=#net5}
+N 480 -820 480 -770 {lab=#net5}
+N 940 -1010 1080 -1010 {lab=VDD}
+N 1010 -1060 1010 -1010 {lab=VDD}
+C {cborder/border_s.sym} 1250 -320 0 0 {
+user="wulff"
+company="wulff"
+}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 580 -740 0 0 {name=x1 }
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 840 -740 0 1 {name=x2 }
+C {devices/ipin.sym} 620 -680 3 0 {name=p4 lab=VSS}
+C {devices/ipin.sym} 800 -680 3 0 {name=p5 lab=VSS}
+C {devices/ipin.sym} 1150 -860 0 1 {name=p6 lab=Output}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 520 -740 0 1 {name=x3 }
+C {devices/ipin.sym} 480 -680 3 0 {name=p7 lab=VSS}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 840 -870 0 1 {name=x4 }
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 580 -870 0 0 {name=x5 }
+C {devices/ipin.sym} 880 -870 0 1 {name=p9 lab=In1}
+C {devices/ipin.sym} 540 -870 0 0 {name=p10 lab=In2}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 680 -1040 0 0 {name=x6 }
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 640 -1040 0 1 {name=x7 }
+C {devices/ipin.sym} 660 -1070 3 1 {name=p11 lab=VDD}
+C {devices/ipin.sym} 480 -1000 0 0 {name=p12 lab=VSS}
+C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} 580 -1000 2 0 {name=x8 }
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 1000 -720 0 0 {name=x9 }
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 980 -980 0 1 {name=x10 }
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} 1040 -980 0 0 {name=x11 }
+C {devices/ipin.sym} 1040 -660 3 0 {name=p13 lab=VSS}
+C {devices/ipin.sym} 1010 -1060 3 1 {name=p8 lab=VDD}
