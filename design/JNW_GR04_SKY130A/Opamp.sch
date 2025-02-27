@@ -104,4 +104,4 @@ C {devices/iopin.sym} 380 -180 0 0 {name=p5 lab=Vo
 C {devices/lab_wire.sym} -160 -510 0 1 {name=p7 sig_type=std_logic lab=Vbias
 }
 C {JNW_TR_SKY130A/JNWTR_RPPO8.sym} -290 -360 3 0 {name=x8 }
-C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} -290 -210 3 0 {name=x5 }
+C {JNW_TR_SKY130A/JNWTR_RPPO2.sym} -290 -210 3 0 {name=x9 }

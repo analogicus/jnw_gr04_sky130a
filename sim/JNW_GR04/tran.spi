@@ -42,7 +42,7 @@ V_OUT I_OUT 0 dc 0.5
 .option savecurrents
 .save V(VD1_OUT)
 .save V(VD2_OUT)
-
+.save(VIP)
 
 
 
