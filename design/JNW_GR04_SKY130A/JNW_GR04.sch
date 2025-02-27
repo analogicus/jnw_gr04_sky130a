@@ -57,6 +57,12 @@ N -410 -540 -380 -540 {lab=VDD_1V8}
 N -190 -330 -40 -330 {lab=#net2}
 N -110 -320 -110 -270 {lab=VD1_out}
 N -110 -350 -110 -320 {lab=VD1_out}
+N 270 -600 270 -540 {lab=#net1}
+N 270 -600 440 -600 {lab=#net1}
+N 440 -600 440 -540 {lab=#net1}
+N 480 -660 480 -570 {lab=VDD_1V8}
+N 300 -660 480 -660 {lab=VDD_1V8}
+N 480 -510 480 -440 {lab=xxx}
 C {cborder/border_s.sym} 530 -30 0 0 {
 user="wulff"
 company="wulff"}
@@ -84,4 +90,7 @@ C {devices/lab_wire.sym} 300 -270 0 0 {name=p3 sig_type=std_logic lab=VD1_out
 C {devices/lab_wire.sym} 310 -190 0 0 {name=p6 sig_type=std_logic lab=VD2_out
 }
 C {devices/ipin.sym} -460 -660 0 0 {name=p1 lab=VDD_1V8
+}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 440 -540 0 0 {name=x7 }
+C {devices/opin.sym} 480 -440 1 0 {name=p4 lab=I_temp
 }

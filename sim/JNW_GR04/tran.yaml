@@ -36,3 +36,19 @@ vd2_out:
   scale: 1
   digits: 5
   unit: V
+
+
+i_temp:
+  src:
+    - i_temp_-40
+    - i_temp_-20
+    - i_temp_0
+    - i_temp_20
+    - i_temp_40
+    - i_temp_80
+    - i_temp_125
+  name: I out
+  scale 1
+  digits 5
+  unit A
+
