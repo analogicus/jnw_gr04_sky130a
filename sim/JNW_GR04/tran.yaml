@@ -9,40 +9,144 @@
 #  digits: <significant digits>
 #  unit: Unit
 
+#vd1_out:
+#  src:
+#    - vd1_-40
+#    - vd1_-35
+#    - vd1_-30
+#    - vd1_-25
+#    - vd1_-20
+#    - vd1_-15
+#    - vd1_-10
+#    - vd1_-5 
+#    - vd1_0
+#    - vd1_5
+#    - vd1_10
+#    - vd1_15 
+#    - vd1_20
+#    - vd1_25
+#    - vd1_30
+#    - vd1_35 
+#    - vd1_40
+#    - vd1_45
+#    - vd1_50
+#    - vd1_55
+#    - vd1_60
+#    - vd1_65
+#    - vd1_70
+#    - vd1_75 
+#    - vd1_80
+#    - vd1_85
+#    - vd1_90
+#    - vd1_95
+#    - vd1_100
+#    - vd1_105
+#    - vd1_110
+#    - vd1_115 
+#    - vd1_120
+#  name: VD1 voltage
+#  scale: 1
+#  digits: 5
+#  unit: V
+#
+##vd2_out:
+#  src:
+#    - vd2_-40
+#    - vd2_-35
+#    - vd2_-30
+#    - vd2_-25
+#    - vd2_-20
+#    - vd2_-15
+#    - vd2_-10
+#    - vd2_-5 
+#    - vd2_0
+#    - vd2_5
+#    - vd2_10
+#    - vd2_15 
+#    - vd2_20
+#    - vd2_25
+#    - vd2_30
+#    - vd2_35 
+#    - vd2_40
+#    - vd2_45
+#    - vd2_50
+#    - vd2_55
+#    - vd2_60
+#    - vd2_65
+#    - vd2_70
+#    - vd2_75 
+#    - vd2_80
+#    - vd2_85
+#    - vd2_90
+#    - vd2_95
+#    - vd2_100
+#    - vd2_105
+#    - vd2_110
+#    - vd2_115 
+#    - vd2_120
+#  name: VD2 voltage
+#  scale: 1
+#  digits: 5
+#  unit: V
+#
+#i_out:
+#  src:
+#    - i_out_-40
+#    - i_out_-35
+#    - i_out_-30
+#    - i_out_-25
+#    - i_out_-20
+#    - i_out_-15
+#    - i_out_-10
+#    - i_out_-5 
+#    - i_out_0
+#    - i_out_5
+#    - i_out_10
+#    - i_out_15 
+#    - i_out_20
+#    - i_out_25
+#    - i_out_30
+#    - i_out_35 
+#    - i_out_40
+#    - i_out_45
+#    - i_out_50
+#    - i_out_55
+#    - i_out_60
+#    - i_out_65
+#    - i_out_70
+#    - i_out_75 
+#    - i_out_80
+#    - i_out_85
+#    - i_out_90
+#    - i_out_95
+#    - i_out_100
+#    - i_out_105
+#    - i_out_110
+#    - i_out_115 
+#    - i_out_120
+#  name: I_out Current
+#  scale: 1
+#  digits: 5
+#  unit: A
+
 vd1_out:
   src:
     - vd1_-40
-    - vd1_-35
     - vd1_-30
-    - vd1_-25
     - vd1_-20
-    - vd1_-15
     - vd1_-10
-    - vd1_-5 
     - vd1_0
-    - vd1_5
     - vd1_10
-    - vd1_15 
     - vd1_20
-    - vd1_25
     - vd1_30
-    - vd1_35 
     - vd1_40
-    - vd1_45
     - vd1_50
-    - vd1_55
     - vd1_60
-    - vd1_65
     - vd1_70
-    - vd1_75 
     - vd1_80
-    - vd1_85
     - vd1_90
-    - vd1_95
     - vd1_100
-    - vd1_105
     - vd1_110
-    - vd1_115 
     - vd1_120
   name: VD1 voltage
   scale: 1
@@ -52,39 +156,47 @@ vd1_out:
 vd2_out:
   src:
     - vd2_-40
-    - vd2_-35
     - vd2_-30
-    - vd2_-25
     - vd2_-20
-    - vd2_-15
     - vd2_-10
-    - vd2_-5 
     - vd2_0
-    - vd2_5
     - vd2_10
-    - vd2_15 
     - vd2_20
-    - vd2_25
     - vd2_30
-    - vd2_35 
     - vd2_40
-    - vd2_45
     - vd2_50
-    - vd2_55
     - vd2_60
-    - vd2_65
     - vd2_70
-    - vd2_75 
     - vd2_80
-    - vd2_85
     - vd2_90
-    - vd2_95
     - vd2_100
-    - vd2_105
     - vd2_110
-    - vd2_115 
     - vd2_120
   name: VD2 voltage
   scale: 1
   digits: 5
   unit: V
+
+i_out:
+  src:
+    - i_out_-40
+    - i_out_-30
+    - i_out_-20
+    - i_out_-10
+    - i_out_0
+    - i_out_10
+    - i_out_20
+    - i_out_30
+    - i_out_40
+    - i_out_50
+    - i_out_60
+    - i_out_70
+    - i_out_80
+    - i_out_90
+    - i_out_100
+    - i_out_110
+    - i_out_120
+  name: I_out Current
+  scale: 1
+  digits: 5
+  unit: A

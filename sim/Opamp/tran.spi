@@ -54,7 +54,7 @@ unset askquit
 *op
 *print v(VIP) v(VIN) v(Vo)
 
-tran 10n 5u
+tran 1n 10u 1n
 
 
 * AC Analysis: Sweep frequency from 1 Hz to 1 GHz
