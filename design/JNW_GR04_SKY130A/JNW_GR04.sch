@@ -86,6 +86,8 @@ N 1020 -420 1090 -420 {lab=VSS}
 N 1050 -420 1050 -390 {lab=VSS}
 N 1370 -660 1370 -580 {lab=I_out}
 N 1000 -600 1020 -600 {lab=Vo}
+N 1600 -660 1600 -620 {lab=Vo}
+N 1600 -550 1600 -490 {lab=#net2}
 C {devices/ipin.sym} 560 -820 0 0 {name=p4 lab=VDD_1V8
 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 670 -750 0 1 {name=x6}
@@ -98,7 +100,7 @@ spiceprefix=X
 C {JNW_TR_SKY130A/JNWTR_RPPO16.sym} 750 -580 3 1 {name=x10 }
 C {sky130_fd_pr/pnp_05v5.sym} 730 -450 0 0 {name=Q4
 model=pnp_05v5_W3p40L3p40
-m=6
+m=5
 spiceprefix=X
 }
 C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 1020 -430 0 0 {name=x2 }
@@ -117,3 +119,6 @@ C {devices/lab_wire.sym} 750 -480 0 0 {name=p11 sig_type=std_logic lab=VD2_out
 }
 C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 1090 -430 0 0 {name=x3 }
 C {JNW_GR04_SKY130A/Opamp_test.sym} 920 -600 0 0 {name=x1}
+C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 1600 -560 0 0 {name=x5 }
+C {devices/lab_wire.sym} 1600 -650 0 0 {name=p1 sig_type=std_logic lab=Vo}
+C {devices/lab_wire.sym} 1600 -490 0 0 {name=p2 sig_type=std_logic lab=Vin}
