@@ -2,7 +2,7 @@ name: SIM
 
 on:
   push:
-    branches: ["main"]
+    branches: ["siver"]
     paths:
       - 'design/**.sch'
       - 'design/**.mag'

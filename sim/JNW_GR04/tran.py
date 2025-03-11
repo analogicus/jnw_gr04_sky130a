@@ -6,38 +6,69 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def main(name):
-    # Load CSV file
-  data = pd.read_csv("results/tran_Sch_typical.csv")  # Replace with the actual filename
+    #return
 
-  # Extract temperatures from column names
-  temperatures = [-40, -20, 0, 20, 40, 80, 125]
+    # Load the CSV file
+    data = pd.read_csv('results/tran_Sch_typical.csv')
 
-  # Compute current (I = (Vd1 - Vd2) / 10k)
-  currents = [(data[f'vd1_{temp}'] - data[f'vd2_{temp}']) / 10_000 * 1e6 for temp in temperatures]
+    # Define temperatures from -40 to 120 in steps of 10
+    temperatures = list(range(-40, 130, 10))  # 130 is exclusive, so stops at 120
 
-  # Convert to a list for plotting
-  currents = [i.values[0] for i in currents]
+    # Generate column names dynamically
+    vd1_columns = [f'vd1_{temp}' for temp in temperatures]
+    vd2_columns = [f'vd2_{temp}' for temp in temperatures]
+    I_out_columns = [f'i_out_{temp}' for temp in temperatures]
 
-  # Plot
-  plt.figure(figsize=(8, 5))
-  plt.plot(temperatures, currents, marker='o', linestyle='-')
-  plt.xlabel("Temperature (°C)")
-  plt.ylabel("Current (µA)")
-  plt.title("Current vs Temperature")
-  plt.grid()
+    # Extract values and compute difference
+    vd1_values = data[vd1_columns].values[0]
+    vd2_values = data[vd2_columns].values[0]
+    diff_values = vd1_values - vd2_values
+    I_out_values = data[I_out_columns].values[0]
 
-  temp_range = np.arange(min(temperatures), max(temperatures) + 1, 5)
-  plt.xticks(temp_range)
-  # Save the plot as a PNG file
-  plt.savefig("current_vs_temperature.png")
-  yamlfile = name + ".yaml"
+    # Polynomial fitting (quadratic fit)
+    poly_coeffs = np.polyfit(temperatures, diff_values, 2)
+    poly_eq = np.poly1d(poly_coeffs)
+    poly_str = f"{poly_coeffs[0]:.4e}ΔT² + {poly_coeffs[1]:.4e}ΔT + {poly_coeffs[2]:.4e}"
 
-  # Read result yaml file
-  with open(yamlfile) as fi:
-    obj = yaml.safe_load(fi)
 
-  # Do something to parameters
+    # Create plot for voltage difference
+    plt.figure(figsize=(10, 6), dpi=150)
+    plt.grid(True, linestyle='--', alpha=0.6)   
+    # Plot data and fit
+    plt.plot(temperatures, diff_values, 'bo-', label='Measured Data')
+    temp_range = np.linspace(min(temperatures), max(temperatures), 100)
+    plt.plot(temp_range, poly_eq(temp_range), 'r--', label='Quadratic Fit') 
+    # Labels and title
+    plt.xlabel('Temperature (°C)', fontsize=12)
+    plt.ylabel('Voltage Difference (V)', fontsize=12)
+    plt.title('Voltage Difference vs Temperature with Polynomial Fit', fontsize=14)
 
-  # Save new yaml file
-  with open(yamlfile,"w") as fo:
-    yaml.dump(obj,fo)
+    # Calculate sensitivity metrics
+    min_diff = min(diff_values)
+    max_diff = max(diff_values)
+    temp_range = max(temperatures) - min(temperatures)
+    sensitivity = (max_diff - min_diff) / temp_range    
+    # Legend and saving
+    plt.legend(loc='upper right')
+    plt.savefig('voltage_difference.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+    # Create plot for I_out_values
+    plt.figure(figsize=(10, 6), dpi=150)
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.plot(temperatures, I_out_values, 'go-', label='I_out Values')
+    plt.xlabel('Temperature (°C)', fontsize=12)
+    plt.ylabel('I_out (A)', fontsize=12)
+    plt.title('I_out vs Temperature', fontsize=14)
+    plt.legend(loc='upper right')
+    plt.savefig('I_out_values.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+    # YAML handling (keep existing functionality)
+    yamlfile = name + ".yaml"
+    with open(yamlfile) as fi:
+        obj = yaml.safe_load(fi)    
+    # Do something to parameters
+    with open(yamlfile,"w") as fo:
+        yaml.dump(obj,fo)   
+    print('test')

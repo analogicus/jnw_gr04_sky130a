@@ -6,12 +6,15 @@ load {cicname}.raw
 echo "MEAS_START"
 
 set fend = .raw
-foreach vtemp -40 -20 0 20 40 80 125
+*foreach vtemp -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120
+foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
 	option temp=$vtemp
 	load {cicname}_$vtemp$fend
 
-	meas tran VD1_$vtemp find V(xdut.vd1_out) at=50n
-	meas tran VD2_$vtemp find v(xdut.vd2_out) at=50n
+	meas tran VD1_$vtemp find V(xdut.vd1_out) at=1u
+	meas tran VD2_$vtemp find V(xdut.vd2_out) at=1u
+	meas tran I_out_$vtemp find I(V_I) at=1u
+	
 end
 echo "MEAS_END"
 .endc

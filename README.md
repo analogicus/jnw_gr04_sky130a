@@ -5,32 +5,24 @@
 [![DOCS](../../actions/workflows/docs.yaml/badge.svg)](../../actions/workflows/docs.yaml)
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
-# IMPORTANT!!
-Branch Siver contains a different approach using bjt transistors instead of mosfets, this setup show extremely good linearity
-
 # Who
-Group 4, Michal, Siver, Marte, Halvor
+Group 4: Michal, Siver, Marte, Halvor
 
 # Why
 
-Milestone 1 AIC
+For a project in TFE4188
 
 # How
 
-Designed Opamp based on design shown in class
-Designed temperature sensing circuit based on design shown in class
-Spend a long time figuring out github workflows and linux
+Below is a plot of the voltage difference over the resistor vs temperature
+![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
 
-![Current vs. temperature](sim/JNW_GR04/current_vs_temperature.png)
+Below is a plot of the output current proportional to temperature
+![Current vs. temperature](sim/JNW_GR04/I_out_values.png)
 
 # Problems present
-The circuit shows linearity from -25 degrees to 125 degrees, at -40 something strange happens
-Simulation not set up to read current, current is calculated based on voltage difference over R1 using python
 
-# Ways to fix
-Figure out how to measure current, and do operating point analysis on opamp transistors.
-The transistors in the opamp have been chosen to match the current ratio between the mirrors. Appropriate R1 value has to be found in order to get transistors in active area
-Not much thought has been given to transistors in JNW_GR04 circuit. Need to ensure that these are in active region aswell.
+Need to start on milestone 2.
 
 # What
 
@@ -62,4 +54,4 @@ Not much thought has been given to transistors in JNW_GR04 circuit. Need to ensu
 | :---                | :---:     | :---:           | :---:     | :---: |
 | Technology          |         | Skywater 130 nm |         |       |
 | AVDD                | 1.7    | 1.8           | 1.9    | V     |
-| Temperature         | -40     | 27            | 125     | C     |
+| Temperature         | -40     | 27            | 120     | C     |

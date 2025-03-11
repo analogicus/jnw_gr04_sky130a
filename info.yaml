@@ -18,4 +18,4 @@ doc:
       - JNW_GR04
   
 sim:
-  JNW_GR04: make typical
+  JNW_GR04: make typical && make summary
