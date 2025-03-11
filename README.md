@@ -14,12 +14,15 @@ For a project in TFE4188
 
 # How
 
-Below is a plot of the current vs temperature
+Below is a plot of the voltage difference over the resistor vs temperature
 ![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
+
+Below is a plot of the output current proportional to temperature
+![Current vs. temperature](sim/JNW_GR04/I_out_values.png)
 
 # Problems present
 
-
+Need to start on milestone 2.
 
 # What
 
