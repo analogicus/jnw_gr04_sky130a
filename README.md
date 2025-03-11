@@ -6,24 +6,19 @@
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
 # Who
-Group 4, Michal, Siver, Marte, Halvor
+Group 4: Michal, Siver, Marte, Halvor
 
 # Why
 
-For a better future
+For a project in TFE4188
 
 # How
 
-Designed Opamp based on design shown in class
-Designed temperature sensing circuit based on design shown in class
-Spend a long time figuring out github workflows and linux
-
+Below is a plot of the current vs temperature
 ![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
 
 # Problems present
-Figure out how to measure current, and do operating point analysis on opamp transistors.
-The transistors in the opamp have been chosen to match the current ratio between the mirrors. Appropriate R1 value has to be found in order to get transistors in active area
-Not much thought has been given to transistors in JNW_GR04 circuit. Need to ensure that these are in active region aswell.
+
 
 
 # What
