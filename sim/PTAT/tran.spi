@@ -17,14 +17,15 @@
 * PARAMETERS
 *-----------------------------------------------------------------
 .param TRF = 10p
-
+.param vdda = 1.8
 .param AVDD = {vdda}
 
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
-VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
+VDD  VDD_1V8  VSS  dc 1.8
+V_I  I_out  0  dc  0
 
 *-----------------------------------------------------------------
 * DUT
@@ -35,12 +36,15 @@ VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
 * PROBE
 *----------------------------------------------------------------
 .save all
-
+.option savecurrents
+.save VD1_OUT
+.save VD2_OUT
 
 *----------------------------------------------------------------
 * NGSPICE control
 *----------------------------------------------------------------
 .control
+
 set num_threads=8
 set color0=white
 set color1=black
@@ -49,10 +53,15 @@ unset askquit
 optran 0 0 0 1n 1u 0
 
 
-tran 1n 10n 1p
-write
-quit
+set fend = .raw
+*foreach vtemp -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120
+foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
+  option temp=$vtemp
+  tran 1n 5u 10n
+  write {cicname}_$vtemp$fend
+end
 
+quit
 
 .endc
 

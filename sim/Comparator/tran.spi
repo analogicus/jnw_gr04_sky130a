@@ -1,0 +1,62 @@
+* Test script for Comparator functionality (with longer pulse and simulation time)
+
+* Include necessary files
+#ifdef Lay
+.include ../../../work/lpe/Comparator_lpe.spi
+#else
+.include ../../../work/xsch/Comparator.spice
+#endif
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15 reltol=1e-3
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
+
+*-----------------------------------------------------------------
+* DUT (Device Under Test)
+*-----------------------------------------------------------------
+.include ../xdut.spi
+
+*-----------------------------------------------------------------
+* Testbench for comparator functionality
+*-----------------------------------------------------------------
+* Generate a pulse signal on INP to test the comparator's behavior
+Vin INP 0 DC 0V PULSE (0V 1.8V 0 10n 10n 50n 100n)  
+* Generate a pulse from 0V to 1.8V with a longer high time
+
+*-----------------------------------------------------------------
+* PROBE
+*-----------------------------------------------------------------
+.save all
+
+*-----------------------------------------------------------------
+* NGSPICE control
+*-----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+* Run transient simulation for a longer time (50n seconds)
+tran 1n 100n 1p
+
+* Output results
+write
+quit
+
+.endc
+
+.end
