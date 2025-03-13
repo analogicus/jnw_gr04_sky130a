@@ -1,28 +1,27 @@
 
 
+//example taken from cnr_gr02
 
-
-module temp_to_dig {
+module temp_to_dig (
 	input clk,
 	input reset,
-	input vo, //output from comparator
-	output reg[15:0] temp, //16 bit output
-};
+	input comp_out,
+	output reg [7:0] temp
+); 
 
-
-	reg [15:0] count;
+	reg [7:0] count;
 
 	always @(posedge clk) begin
 		if (reset) begin
-			d_out <= 0;
+			temp <= 0;
 			count <= 0;
 		end else begin
-			if (!vop) begin
-				temp <= count;
-			end else begin
+			if (!comp_out) begin
 				count <= count + 1;
+			end else begin
+				temp <= count;
 			end
 		end
 	end
-endmodule;
+endmodule
 
