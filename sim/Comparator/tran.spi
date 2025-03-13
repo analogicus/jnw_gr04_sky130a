@@ -23,7 +23,7 @@
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
 VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
-VRST RST 0 dc 0
+VRST RST  VSS  pwl 0 {AVDD} 60n {AVDD} 61n 0
 
 *-----------------------------------------------------------------
 * DUT (Device Under Test)
@@ -52,7 +52,7 @@ set color1=black
 unset askquit
 
 * Run transient simulation for a longer time (50n seconds)
-tran 1n 100n 1p
+tran 1n 500n 1p
 
 * Output results
 write
