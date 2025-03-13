@@ -2,9 +2,9 @@
 
 * Include necessary files
 #ifdef Lay
-.include ../../../work/lpe/Comparator_lpe.spi
+.include ../../../work/lpe/Comparator_TB_lpe.spi
 #else
-.include ../../../work/xsch/Comparator.spice
+.include ../../../work/xsch/Comparator_TB.spice
 #endif
 
 *-----------------------------------------------------------------
@@ -23,7 +23,7 @@
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
 VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
-VRST RST 0 dc 0
+VRST RST 0 dc {AVDD}
 
 *-----------------------------------------------------------------
 * DUT (Device Under Test)
