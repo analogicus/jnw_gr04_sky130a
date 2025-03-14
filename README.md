@@ -34,15 +34,20 @@ Below is a plot of the voltage difference across the resistor, the voltage does 
 
 ## The digital output circuit (Comparator.sch)
 
-The digital output circuit consists of the PTAT circuit, where the temperature dependent current is called I_PTAT for this instance. The digital output currents consist of a comparator, called Opamp_comp.sch, which compares I_PTAT to a reference voltage Vref at 1V. If I_PTAT becomes larger than Vref, the output of the comparator becomes high. The time it takes for the comparator to give a high output depends on the temperature, which is a result of a higher temperature equaling a larger current and vice versa. 
+The digital output circuit consists of the PTAT circuit, where the temperature dependent current is called I_PTAT for this instance. The digital output circuit consist of a comparator, called Opamp_comp.sch, which compares I_PTAT to a reference voltage Vref at 1V. If I_PTAT becomes larger than Vref, the output of the comparator becomes high. The time it takes for the comparator to give a high output depends on the temperature, which is a result of a higher temperature equaling a larger current and vice versa. 
 
 Below is a plot of the output OUT simulated for different temperatures. 
 
+## The code block
+
+...
 
 # Problems present
 
 The PTAT circuit does not give an exact linear relation to the temperature, to make the relation more similiar we would need to further work on the opamp used in the circuit. 
 
+Ideally we would simulate the opamps stability. 
+We also need to simulate for different corners and add a power up functonality. 
 
 # What
 
