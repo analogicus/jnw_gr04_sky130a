@@ -38,7 +38,6 @@ N -470 250 -470 290 {lab=VSS}
 N -560 220 -510 220 {lab=RST}
 N -470 220 -440 220 {lab=VSS}
 N -440 220 -440 290 {lab=VSS}
-C {JNW_GR04_SKY130A/Opamp_test.sym} 10 20 0 0 {name=x1}
 C {devices/res.sym} -240 -100 0 0 {name=R1
 value=8k
 footprint=1206
@@ -61,3 +60,5 @@ C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -360 250 0 0 {name=x3 }
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -510 220 0 0 {name=x4 }
 C {devices/lab_wire.sym} -630 290 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
+C {JNW_GR04_SKY130A/Opamp_comp.sym} 20 30 0 0 {name=x1}
+C {devices/lab_wire.sym} -360 30 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}

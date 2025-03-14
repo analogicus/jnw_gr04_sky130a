@@ -52,10 +52,19 @@ set color1=black
 unset askquit
 
 * Run transient simulation for a longer time (50n seconds)
-tran 1n 500n 1p
+*tran 1n 500n 1p
+
+
+set fend = .raw
+*foreach vtemp -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120
+foreach vtemp -40 -20 0 20 40 60 80 100 120
+  option temp=$vtemp
+  tran 1n 500n 1p
+  write {cicname}_$vtemp$fend
+end
 
 * Output results
-write
+*write
 quit
 
 .endc
