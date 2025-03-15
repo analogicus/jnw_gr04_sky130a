@@ -1,9 +1,9 @@
-* Measure Opamp
+* Measure Comparator_TB
 .control
 
 load {cicname}.raw
 
 echo "MEAS_START"
-.measure tran I_bias FIND I(R1) AT=50n
+
 echo "MEAS_END"
 .endc
