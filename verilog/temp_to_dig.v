@@ -6,7 +6,8 @@ module temp_to_dig (
 	input clk,
 	input reset,
 	input comp_out,
-	output reg [7:0] temp
+	output reg [7:0] temp,
+	output comp_reset
 ); 
 
 	reg [7:0] count;

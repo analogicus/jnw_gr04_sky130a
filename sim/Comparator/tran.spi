@@ -29,6 +29,7 @@ VRST RST  VSS  pwl 0 {AVDD} 60n {AVDD} 61n 0
 * DUT (Device Under Test)
 *-----------------------------------------------------------------
 .include ../xdut.spi
+.include ../svinst.spi
 
 *-----------------------------------------------------------------
 * Testbench for comparator functionality
