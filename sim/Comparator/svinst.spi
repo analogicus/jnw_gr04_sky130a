@@ -1,47 +1,41 @@
 *Automatic generated instance fron ../../tech/scripts/genxdut temp_to_dig
 adut [clk
 + reset
-+ comp_out
 + ]
-+ [temp.7
-+ temp.6
-+ temp.5
-+ temp.4
-+ temp.3
-+ temp.2
-+ temp.1
-+ temp.0
-+ comp_reset
++ [b.7
++ b.6
++ b.5
++ b.4
++ b.3
++ b.2
++ b.1
++ b.0
 + ] null dut
 .model dut d_cosim simulation="../temp_to_dig.so" delay=10p
 
 * Inputs
 Rsvi0 clk 0 1G
 Rsvi1 reset 0 1G
-Rsvi2 comp_out 0 1G
 
 * Outputs
-Rsvi3 temp.7 0 1G
-Rsvi4 temp.6 0 1G
-Rsvi5 temp.5 0 1G
-Rsvi6 temp.4 0 1G
-Rsvi7 temp.3 0 1G
-Rsvi8 temp.2 0 1G
-Rsvi9 temp.1 0 1G
-Rsvi10 temp.0 0 1G
-Rsvi11 comp_reset 0 1G
+Rsvi2 b.7 0 1G
+Rsvi3 b.6 0 1G
+Rsvi4 b.5 0 1G
+Rsvi5 b.4 0 1G
+Rsvi6 b.3 0 1G
+Rsvi7 b.2 0 1G
+Rsvi8 b.1 0 1G
+Rsvi9 b.0 0 1G
 
-E_STATE_temp dec_temp 0 value={( 0 
-+ + 128*v(temp.7)/AVDD
-+ + 64*v(temp.6)/AVDD
-+ + 32*v(temp.5)/AVDD
-+ + 16*v(temp.4)/AVDD
-+ + 8*v(temp.3)/AVDD
-+ + 4*v(temp.2)/AVDD
-+ + 2*v(temp.1)/AVDD
-+ + 1*v(temp.0)/AVDD
+E_STATE_b dec_b 0 value={( 0 
++ + 128*v(b.7)/AVDD
++ + 64*v(b.6)/AVDD
++ + 32*v(b.5)/AVDD
++ + 16*v(b.4)/AVDD
++ + 8*v(b.3)/AVDD
++ + 4*v(b.2)/AVDD
++ + 2*v(b.1)/AVDD
++ + 1*v(b.0)/AVDD
 +)/1000}
-.save v(dec_temp)
-
-.save v(comp_reset)
+.save v(dec_b)
 

@@ -5,10 +5,22 @@
 #include "Vlng__pch.h"
 #include "Vlng___024root.h"
 
+VL_ATTR_COLD void Vlng___024root___eval_static__TOP(Vlng___024root* vlSelf);
+
 VL_ATTR_COLD void Vlng___024root___eval_static(Vlng___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vlng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlng___024root___eval_static\n"); );
+    // Body
+    Vlng___024root___eval_static__TOP(vlSelf);
+}
+
+VL_ATTR_COLD void Vlng___024root___eval_static__TOP(Vlng___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vlng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vlng___024root___eval_static__TOP\n"); );
+    // Body
+    vlSelf->temp_to_dig__DOT__rst = 0U;
 }
 
 VL_ATTR_COLD void Vlng___024root___eval_initial(Vlng___024root* vlSelf) {
@@ -68,9 +80,7 @@ VL_ATTR_COLD void Vlng___024root___ctor_var_reset(Vlng___024root* vlSelf) {
     // Body
     vlSelf->clk = VL_RAND_RESET_I(1);
     vlSelf->reset = VL_RAND_RESET_I(1);
-    vlSelf->comp_out = VL_RAND_RESET_I(1);
-    vlSelf->temp = VL_RAND_RESET_I(8);
-    vlSelf->comp_reset = VL_RAND_RESET_I(1);
-    vlSelf->temp_to_dig__DOT__count = VL_RAND_RESET_I(8);
+    vlSelf->b = VL_RAND_RESET_I(5);
+    vlSelf->temp_to_dig__DOT__rst = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = VL_RAND_RESET_I(1);
 }

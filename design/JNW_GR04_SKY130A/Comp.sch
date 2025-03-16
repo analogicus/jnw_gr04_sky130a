@@ -30,14 +30,14 @@ N -470 160 -360 160 {lab=I_PTAT}
 N -360 160 -360 190 {lab=I_PTAT}
 N -360 30 -360 160 {lab=I_PTAT}
 N -470 250 -470 290 {lab=VSS}
-N -560 220 -510 220 {lab=RST}
+N -560 220 -510 220 {lab=OUT}
 N -630 -190 -620 -190 {lab=VDD_1V8}
 N -630 30 -470 30 {lab=I_PTAT}
 N -240 140 -240 290 {lab=VSS}
 N -470 220 -450 220 {lab=VSS}
 N -450 220 -450 270 {lab=VSS}
 N -470 270 -450 270 {lab=VSS}
-N -630 220 -560 220 {}
+N -630 220 -560 220 {lab=OUT}
 C {devices/res.sym} -240 -100 0 0 {name=R1
 value=8k
 footprint=1206
@@ -49,16 +49,15 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/ipin.sym} -630 -190 0 0 {name=p1 lab=VDD_1V8}
-C {devices/ipin.sym} -630 220 0 0 {name=p2 lab=RST}
 C {devices/ipin.sym} -630 290 0 0 {name=p3 lab=VSS}
 C {devices/iopin.sym} 200 20 0 0 {name=p4 lab=OUT}
 C {devices/lab_wire.sym} -240 0 0 0 {name=p5 sig_type=std_logic lab=Vref}
 C {devices/lab_wire.sym} -240 140 0 0 {name=p6 sig_type=std_logic lab=VSS
 }
-C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -360 250 0 0 {name=x3 }
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -510 220 0 0 {name=x4 }
 C {devices/lab_wire.sym} -170 290 0 1 {name=p7 sig_type=std_logic lab=VSS
 }
 C {JNW_GR04_SKY130A/Opamp_comp.sym} 20 30 0 0 {name=x1}
-C {devices/lab_wire.sym} -360 30 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}
 C {devices/ipin.sym} -630 30 0 0 {name=p9 lab=I_PTAT}
+C {devices/lab_wire.sym} -630 220 0 0 {name=p2 sig_type=std_logic lab=OUT}
+C {JNW_TR_SKY130A/JNWTR_CAPX4.sym} -360 250 0 0 {name=x2 }
