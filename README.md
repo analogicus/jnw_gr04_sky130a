@@ -26,9 +26,8 @@ The PTAT circuit was simulated for different temperatures, below is a plot of th
 
 ![Current vs. temperature](sim/PTAT/I_out_values.png)
 
-The current I_OUT does not give an exact linear relation to the temperature, likely due to the opamp not being ideal. 
-
-Below is a plot of the voltage difference across the resistor, the voltage does not give a linear relation to the temperature either. (Add something about the quadratic fit)
+The current I_OUT gives an almost proportional temperature/current relationship. We think this is good enough.
+A problem with it however is that the current at negative 40 degrees is almost zero. Meaning it takes a long time to charge the comparator input capacitor.
 
 ![Current vs. temperature](sim/PTAT/voltage_difference.png)
 
@@ -41,24 +40,14 @@ Below is a plot of the output OUT simulated for different temperatures.
 ## The code block
 
 The verilog code increments a counter variable for every clock cycle until Comparator gives logical high on the output.
+We can then estimate current based on the below plot (this can be done externally)
 
-| Temperature (°C) | Counter |
-|-----------------|---------|
-| -40            |         |
-| -20            |         |
-| 0              |         |
-| 20             |         |
-| 40             |         |
-| 60             |         |
-| 80             |         |
-| 100            |         |
-| 120            |         |
 
 ![dec_b vs Temperature](sim/Comparator/dec_b_vs_temp.png)
 
 # Problems present
-
-The PTAT circuit does not give an exact linear relation to the temperature, to make the relation more similiar we would need to further work on the opamp used in the circuit. 
+The current at negative 40 degrees is really low - as shown on the above plot, the comparator takes alot more clock cycles to give logical high on the output.
+We can fix this by adding a offset to shift the current higher.
 
 Ideally we would simulate the opamps stability. 
 We also need to simulate for different corners and add a power up functonality. 
