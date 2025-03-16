@@ -35,7 +35,6 @@ A problem with it however is that the current at negative 40 degrees is almost z
 
 The digital output circuit consists of the PTAT circuit, where the temperature dependent current is called I_PTAT for this instance. The digital output circuit consist of a comparator, called Opamp_comp.sch, which compares I_PTAT to a reference voltage Vref at 1V. If I_PTAT becomes larger than Vref, the output of the comparator becomes high. The time it takes for the comparator to give a high output depends on the temperature, which is a result of a higher temperature equaling a larger current and vice versa. 
 
-Below is a plot of the output OUT simulated for different temperatures. 
 
 ## The code block
 
