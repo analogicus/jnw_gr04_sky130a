@@ -1,0 +1,43 @@
+*Automatic generated instance fron ../../tech/scripts/genxdut temp_to_dig
+adut [clk
++ reset
++ comp_out
++ ]
++ [temp.7
++ temp.6
++ temp.5
++ temp.4
++ temp.3
++ temp.2
++ temp.1
++ temp.0
++ ] null dut
+.model dut d_cosim simulation="../temp_to_dig.so" delay=10p
+
+* Inputs
+Rsvi0 clk 0 1G
+Rsvi1 reset 0 1G
+Rsvi2 comp_out 0 1G
+
+* Outputs
+Rsvi3 temp.7 0 1G
+Rsvi4 temp.6 0 1G
+Rsvi5 temp.5 0 1G
+Rsvi6 temp.4 0 1G
+Rsvi7 temp.3 0 1G
+Rsvi8 temp.2 0 1G
+Rsvi9 temp.1 0 1G
+Rsvi10 temp.0 0 1G
+
+E_STATE_temp dec_temp 0 value={( 0 
++ + 128*v(temp.7)/AVDD
++ + 64*v(temp.6)/AVDD
++ + 32*v(temp.5)/AVDD
++ + 16*v(temp.4)/AVDD
++ + 8*v(temp.3)/AVDD
++ + 4*v(temp.2)/AVDD
++ + 2*v(temp.1)/AVDD
++ + 1*v(temp.0)/AVDD
++)/1000}
+.save v(dec_temp)
+

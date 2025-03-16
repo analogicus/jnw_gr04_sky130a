@@ -65,9 +65,6 @@ N -450 50 -450 120 {lab=Vin}
 N 290 100 290 110 {lab=I_out}
 N 290 220 320 220 {lab=I_out}
 N 290 190 290 220 {lab=I_out}
-N 250 150 270 150 {lab=VSS}
-N 250 150 250 380 {lab=VSS}
-N 140 380 250 380 {lab=VSS}
 N -390 80 160 80 {lab=#net1}
 N -60 250 -50 250 {lab=Vo}
 N -60 170 -60 250 {lab=Vo}
@@ -87,7 +84,7 @@ N -30 350 -30 380 {lab=VSS}
 N 290 110 290 190 {lab=I_out}
 N -80 170 -60 170 {lab=Vo}
 N 520 110 520 150 {lab=Vo}
-N 520 220 520 280 {lab=#net2}
+N 520 220 520 280 {lab=Vin}
 C {devices/ipin.sym} -520 -50 0 0 {name=p4 lab=VDD_1V8
 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -410 20 0 1 {name=x6}
@@ -104,7 +101,7 @@ m=5
 spiceprefix=X
 }
 C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -60 340 0 0 {name=x2 }
-C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 100 250 0 0 {name=x12 }
+C {JNW_ATR_SKY130A/JNWATR_NCH_8C5F0.sym} 100 250 0 0 {name=x12 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 100 20 0 0 {name=x13}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 250 20 0 0 {name=x4}
 C {devices/iopin.sym} 320 220 2 1 {name=I_out1 lab=I_out
