@@ -24,13 +24,13 @@ The schematic can be found in the design/JNW_GR04_SKY130A folder and is named PT
 
 The PTAT circuit was simulated for different temperatures, below is a plot of the I_OUT current vs temp: 
 
-![Current vs. temperature](sim/JNW_GR04/I_out_values.png)
+![Current vs. temperature](sim/PTAT/I_out_values.png)
 
 The current I_OUT does not give an exact linear relation to the temperature, likely due to the opamp not being ideal. 
 
 Below is a plot of the voltage difference across the resistor, the voltage does not give a linear relation to the temperature either. (Add something about the quadratic fit)
 
-![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
+![Current vs. temperature](sim/PTAT/voltage_difference.png)
 
 ## The digital output circuit (Comparator.sch)
 
@@ -53,6 +53,8 @@ The verilog code increments a counter variable for every clock cycle until Compa
 | 80             |         |
 | 100            |         |
 | 120            |         |
+
+![dec_b vs Temperature](sim/Comparator/dec_b_vs_temp.png)
 
 # Problems present
 
