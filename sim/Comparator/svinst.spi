@@ -1,6 +1,6 @@
 *Automatic generated instance fron ../../tech/scripts/genxdut temp_to_dig
 adut [clk
-+ reset
++ out
 + ]
 + [b.7
 + b.6
@@ -15,7 +15,7 @@ adut [clk
 
 * Inputs
 Rsvi0 clk 0 1G
-Rsvi1 reset 0 1G
+Rsvi1 out 0 1G
 
 * Outputs
 Rsvi2 b.7 0 1G
