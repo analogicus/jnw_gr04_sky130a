@@ -10,7 +10,7 @@ Group 4: Michal, Siver, Marte, Halvor
 
 # Why
 
-Our goal is to make a temperature sensor for the semester project in TFE4188. 
+Our goal is to make a integrated temperature sensor for the semester project in TFE4188. 
 
 # How
 
@@ -40,7 +40,11 @@ Below is a plot of the output OUT simulated for different temperatures.
 
 ## The code block
 
-...
+The verilog code counts clock cycles until the comparator output goes high, from low.
+
+## Digital Output
+
+
 
 # Problems present
 

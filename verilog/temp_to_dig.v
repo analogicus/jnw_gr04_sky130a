@@ -1,28 +1,26 @@
 
-
-//example taken from cnr_gr02
-
 module temp_to_dig (
-	input clk,
-	input reset,
-	input comp_out,
-	output reg [7:0] temp,
-	output comp_reset
-); 
+           input wire         clk,
+           input wire         analog_out,
+           output logic [7:0] b
+           );
 
-	reg [7:0] count;
+   logic                      rst = 0;
 
-	always @(posedge clk) begin
-		if (reset) begin
-			temp <= 0;
-			count <= 0;
-		end else begin
-			if (!comp_out) begin
-				count <= count + 1;
-			end else begin
-				temp <= count;
-			end
-		end
-	end
+   always_ff @(posedge clk) begin
+      if(analog_out>0.8)
+        rst <= 1;
+      else
+        rst <= 0;
+   end
+
+   always_ff @(posedge clk) begin
+      if(rst)
+        b <= 0;
+      else
+        b <= b + 1;
+   end // dig
+
 endmodule
+
 
