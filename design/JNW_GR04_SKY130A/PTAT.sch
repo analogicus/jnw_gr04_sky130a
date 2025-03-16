@@ -104,7 +104,7 @@ C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -60 340 0 0 {name=x2 }
 C {JNW_ATR_SKY130A/JNWATR_NCH_8C5F0.sym} 100 250 0 0 {name=x12 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 100 20 0 0 {name=x13}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} 250 20 0 0 {name=x4}
-C {devices/iopin.sym} 320 220 2 1 {name=I_out1 lab=I_out
+C {devices/opin.sym} 320 220 2 1 {name=I_out1 lab=I_out
 }
 C {devices/ipin.sym} -520 380 0 0 {name=p7 lab=VSS}
 C {devices/lab_wire.sym} -240 150 0 0 {name=p8 sig_type=std_logic lab=Vin}

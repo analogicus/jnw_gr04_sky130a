@@ -36,7 +36,6 @@ N -300 -50 -280 -50 {lab=Vo}
 N -690 80 -670 80 {lab=VSS}
 N -840 80 -690 80 {lab=VSS}
 N -570 -170 -570 -120 {lab=VSS}
-N -570 -120 -570 -110 {lab=VSS}
 N -500 -140 -490 -140 {lab=VIP}
 N -450 -190 -300 -190 {lab=V_diff_pair_bias}
 N -510 -20 -450 -20 {lab=VIN_drain}
@@ -55,15 +54,15 @@ N -570 -480 -570 -390 {lab=VDD}
 N -380 -480 -380 -390 {lab=VDD}
 N -610 -210 -590 -210 {lab=VSS}
 N -570 -30 -570 80 {lab=VSS}
-N -570 -110 -570 -30 {lab=VSS}
 N -510 30 -490 30 {lab=VIN_drain}
 N -260 30 -240 30 {lab=Vo}
 N -840 -480 -380 -480 {lab=VDD}
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -260 30 0 1 {name=x1[1:0]}
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -490 30 0 0 {name=x4[1:0]}
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -490 -140 0 0 {name=x3[3:0]}
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -260 -140 0 1 {name=x2[3:0]}
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -420 -310 0 0 {name=x6[10:0]}
+N -570 -120 -570 -30 {lab=VSS}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -260 30 0 1 {name=x5}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -490 30 0 0 {name=x4}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} -490 -140 0 0 {name=x3}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} -260 -140 0 1 {name=x1}
+C {JNW_ATR_SKY130A/JNWATR_PCH_12C5F0.sym} -420 -310 0 0 {name=x6}
 C {JNW_ATR_SKY130A/JNWATR_PCH_12C5F0.sym} -530 -310 0 1 {name=x7}
 C {devices/ipin.sym} -840 -480 0 0 {name=p1 lab=VDD
 }
@@ -76,12 +75,12 @@ C {devices/ipin.sym} -240 -140 0 1 {name=p3 lab=VIN
 }
 C {devices/ipin.sym} -840 80 0 0 {name=p4 lab=VSS
 }
-C {devices/iopin.sym} -240 -50 0 0 {name=p5 lab=Vo
+C {devices/opin.sym} -240 -50 0 0 {name=p5 lab=Vo
 }
 C {devices/lab_wire.sym} -570 -260 0 0 {name=p7 sig_type=std_logic lab=Vbias
 }
 C {devices/lab_wire.sym} -450 -80 0 0 {name=p9 sig_type=std_logic lab=VIN_drain}
 C {devices/lab_wire.sym} -380 -210 0 0 {name=p10 sig_type=std_logic lab=V_diff_pair_bias}
-C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} -570 -250 1 0 {name=x2 }
+C {JNW_TR_SKY130A/JNWTR_RPPO2.sym} -570 -250 1 0 {name=x2 }
 C {devices/lab_wire.sym} -350 -140 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -610 -210 0 0 {name=p11 sig_type=std_logic lab=VSS}

@@ -6,7 +6,7 @@ S {}
 E {}
 N -240 20 -240 50 {lab=Vref}
 N -250 290 0 290 {lab=VSS}
-N 90 20 200 20 {lab=OUT}
+N 90 20 200 20 {lab=RST}
 N -240 -190 -240 -130 {lab=VDD_1V8}
 N -240 -190 10 -190 {lab=VDD_1V8}
 N 10 -190 10 -130 {lab=VDD_1V8}
@@ -37,7 +37,10 @@ N -240 140 -240 290 {lab=VSS}
 N -470 220 -450 220 {lab=VSS}
 N -450 220 -450 270 {lab=VSS}
 N -470 270 -450 270 {lab=VSS}
-N -630 220 -560 220 {}
+N -630 220 -560 220 {lab=RST}
+N -570 130 -570 220 {lab=RST}
+N -570 130 160 130 {lab=RST}
+N 160 20 160 130 {lab=RST}
 C {devices/res.sym} -240 -100 0 0 {name=R1
 value=8k
 footprint=1206
@@ -51,7 +54,7 @@ m=1}
 C {devices/ipin.sym} -630 -190 0 0 {name=p1 lab=VDD_1V8}
 C {devices/ipin.sym} -630 220 0 0 {name=p2 lab=RST}
 C {devices/ipin.sym} -630 290 0 0 {name=p3 lab=VSS}
-C {devices/iopin.sym} 200 20 0 0 {name=p4 lab=OUT}
+C {devices/opin.sym} 200 20 0 0 {name=p4 lab=OUT}
 C {devices/lab_wire.sym} -240 0 0 0 {name=p5 sig_type=std_logic lab=Vref}
 C {devices/lab_wire.sym} -240 140 0 0 {name=p6 sig_type=std_logic lab=VSS
 }
