@@ -15,7 +15,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vlng___024root final : public VerilatedModule
 
     // DESIGN SPECIFIC STATE
     VL_IN8(clk,0,0);
-    VL_IN8(reset,0,0);
+    VL_IN8(analog_out,0,0);
     VL_OUT8(b,7,0);
     CData/*0:0*/ temp_to_dig__DOT__rst;
     CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;

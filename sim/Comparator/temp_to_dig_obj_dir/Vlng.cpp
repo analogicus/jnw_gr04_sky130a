@@ -10,7 +10,7 @@ Vlng::Vlng(VerilatedContext* _vcontextp__, const char* _vcname__)
     : VerilatedModel{*_vcontextp__}
     , vlSymsp{new Vlng__Syms(contextp(), _vcname__, this)}
     , clk{vlSymsp->TOP.clk}
-    , reset{vlSymsp->TOP.reset}
+    , analog_out{vlSymsp->TOP.analog_out}
     , b{vlSymsp->TOP.b}
     , rootp{&(vlSymsp->TOP)}
 {

@@ -26,7 +26,8 @@
 VSS  VSS  0     dc 0
 VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
 *VRST RST  VSS  pwl 0 {AVDD} 60n {AVDD} 61n 0
-*V_I  OUT  0  dc  0
+*VOUT  out  0  dc  0
+
 
 
 VCLK clk 0 dc 0 pulse (0 {AVDD} 0 {TRF} {TRF} {PW_CLK} {PERIOD_CLK})
@@ -48,6 +49,9 @@ VB4 b.4 b<4> dc 0
 VB5 b.5 b<5> dc 0
 VB6 b.6 b<6> dc 0
 VB7 b.7 b<7> dc 0
+
+VOUT analog_out OUT dc 0
+
 
 *-----------------------------------------------------------------
 * Testbench for comparator functionality

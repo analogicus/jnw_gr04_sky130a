@@ -79,7 +79,7 @@ VL_ATTR_COLD void Vlng___024root___ctor_var_reset(Vlng___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlng___024root___ctor_var_reset\n"); );
     // Body
     vlSelf->clk = VL_RAND_RESET_I(1);
-    vlSelf->reset = VL_RAND_RESET_I(1);
+    vlSelf->analog_out = VL_RAND_RESET_I(1);
     vlSelf->b = VL_RAND_RESET_I(8);
     vlSelf->temp_to_dig__DOT__rst = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = VL_RAND_RESET_I(1);

@@ -18,7 +18,8 @@ VL_INLINE_OPT void Vlng___024root___nba_sequent__TOP__0(Vlng___024root* vlSelf) 
     // Body
     vlSelf->b = ((IData)(vlSelf->temp_to_dig__DOT__rst)
                   ? 0U : (0xffU & ((IData)(1U) + (IData)(vlSelf->b))));
-    vlSelf->temp_to_dig__DOT__rst = vlSelf->reset;
+    vlSelf->temp_to_dig__DOT__rst = (VL_ITOR_D_I(1, (IData)(vlSelf->analog_out)) 
+                                     > 8.00000000000000044e-01);
 }
 
 void Vlng___024root___eval_nba(Vlng___024root* vlSelf) {
@@ -122,7 +123,7 @@ void Vlng___024root___eval_debug_assertions(Vlng___024root* vlSelf) {
     // Body
     if (VL_UNLIKELY((vlSelf->clk & 0xfeU))) {
         Verilated::overWidthError("clk");}
-    if (VL_UNLIKELY((vlSelf->reset & 0xfeU))) {
-        Verilated::overWidthError("reset");}
+    if (VL_UNLIKELY((vlSelf->analog_out & 0xfeU))) {
+        Verilated::overWidthError("analog_out");}
 }
 #endif  // VL_DEBUG
