@@ -40,7 +40,19 @@ Below is a plot of the output OUT simulated for different temperatures.
 
 ## The code block
 
-...
+The verilog code increments a counter variable for every clock cycle until Comparator gives logical high on the output.
+
+| Temperature (°C) | Counter |
+|-----------------|---------|
+| -40            |         |
+| -20            |         |
+| 0              |         |
+| 20             |         |
+| 40             |         |
+| 60             |         |
+| 80             |         |
+| 100            |         |
+| 120            |         |
 
 # Problems present
 
