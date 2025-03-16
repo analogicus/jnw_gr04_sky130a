@@ -15,11 +15,21 @@ VL_INLINE_OPT void Vlng___024root___nba_sequent__TOP__0(Vlng___024root* vlSelf) 
     if (false && vlSelf) {}  // Prevent unused
     Vlng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlng___024root___nba_sequent__TOP__0\n"); );
+    // Init
+    CData/*7:0*/ __Vdly__temp_to_dig__DOT__counter;
+    __Vdly__temp_to_dig__DOT__counter = 0;
     // Body
-    vlSelf->b = ((IData)(vlSelf->temp_to_dig__DOT__rst)
-                  ? 0U : (0xffU & ((IData)(1U) + (IData)(vlSelf->b))));
-    vlSelf->temp_to_dig__DOT__rst = (VL_ITOR_D_I(1, (IData)(vlSelf->analog_out)) 
-                                     > 8.00000000000000044e-01);
+    __Vdly__temp_to_dig__DOT__counter = vlSelf->temp_to_dig__DOT__counter;
+    if (((IData)(vlSelf->analog_out) & (~ (IData)(vlSelf->temp_to_dig__DOT__out_d)))) {
+        vlSelf->b = vlSelf->temp_to_dig__DOT__counter;
+        __Vdly__temp_to_dig__DOT__counter = 0U;
+    } else if ((1U & (~ (IData)(vlSelf->analog_out)))) {
+        __Vdly__temp_to_dig__DOT__counter = (0xffU 
+                                             & ((IData)(1U) 
+                                                + (IData)(vlSelf->temp_to_dig__DOT__counter)));
+    }
+    vlSelf->temp_to_dig__DOT__counter = __Vdly__temp_to_dig__DOT__counter;
+    vlSelf->temp_to_dig__DOT__out_d = vlSelf->analog_out;
 }
 
 void Vlng___024root___eval_nba(Vlng___024root* vlSelf) {
@@ -89,7 +99,7 @@ void Vlng___024root___eval(Vlng___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vlng___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("../../verilog/temp_to_dig.v", 2, "", "NBA region did not converge.");
+            VL_FATAL_MT("../../verilog/temp_to_dig.v", 1, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -100,7 +110,7 @@ void Vlng___024root___eval(Vlng___024root* vlSelf) {
 #ifdef VL_DEBUG
                 Vlng___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("../../verilog/temp_to_dig.v", 2, "", "Active region did not converge.");
+                VL_FATAL_MT("../../verilog/temp_to_dig.v", 1, "", "Active region did not converge.");
             }
             vlSelf->__VactIterCount = ((IData)(1U) 
                                        + vlSelf->__VactIterCount);
