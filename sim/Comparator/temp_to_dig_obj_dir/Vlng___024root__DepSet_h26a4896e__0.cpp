@@ -21,18 +21,14 @@ VL_INLINE_OPT void Vlng___024root___nba_sequent__TOP__0(Vlng___024root* vlSelf) 
     // Body
     __Vdly__temp_to_dig__DOT__count = vlSelf->temp_to_dig__DOT__count;
     if (vlSelf->reset) {
-        vlSelf->comp_reset = 1U;
         vlSelf->temp = 0U;
         __Vdly__temp_to_dig__DOT__count = 0U;
+    } else if (vlSelf->comp_out) {
+        vlSelf->temp = vlSelf->temp_to_dig__DOT__count;
     } else {
-        vlSelf->comp_reset = 0U;
-        if (vlSelf->comp_out) {
-            vlSelf->temp = vlSelf->temp_to_dig__DOT__count;
-        } else {
-            __Vdly__temp_to_dig__DOT__count = (0xffU 
-                                               & ((IData)(1U) 
-                                                  + (IData)(vlSelf->temp_to_dig__DOT__count)));
-        }
+        __Vdly__temp_to_dig__DOT__count = (0xffU & 
+                                           ((IData)(1U) 
+                                            + (IData)(vlSelf->temp_to_dig__DOT__count)));
     }
     vlSelf->temp_to_dig__DOT__count = __Vdly__temp_to_dig__DOT__count;
 }
