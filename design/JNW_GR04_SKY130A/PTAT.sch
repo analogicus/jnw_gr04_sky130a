@@ -87,7 +87,8 @@ N 520 110 520 150 {lab=Vo}
 N 520 220 520 280 {lab=Vin}
 C {devices/ipin.sym} -520 -50 0 0 {name=p4 lab=VDD_1V8
 }
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -410 20 0 1 {name=x6}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -410 20 0 1 {name=x6
+}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -370 20 0 0 {name=x9}
 C {sky130_fd_pr/pnp_05v5.sym} -430 320 0 1 {name=Q3
 model=pnp_05v5_W3p40L3p40

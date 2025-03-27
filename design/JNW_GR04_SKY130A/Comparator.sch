@@ -54,6 +54,7 @@ N 350 20 460 20 {lab=OUT}
 N 280 110 280 140 {lab=VDD_1V8}
 N 280 140 380 140 {lab=VDD_1V8}
 N 380 -190 380 140 {lab=VDD_1V8}
+N -360 250 -360 260 {lab=VSS}
 C {devices/res.sym} -240 -100 0 0 {name=R1
 value=8k
 footprint=1206
@@ -71,7 +72,6 @@ C {devices/lab_wire.sym} -240 0 0 0 {name=p5 sig_type=std_logic lab=Vref}
 C {JNW_GR04_SKY130A/PTAT.sym} -620 30 0 0 {name=x2}
 C {devices/lab_wire.sym} -240 140 0 0 {name=p6 sig_type=std_logic lab=VSS
 }
-C {JNW_TR_SKY130A/JNWTR_CAPX4.sym} -360 250 0 0 {name=x3 }
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -510 220 0 0 {name=x4 }
 C {devices/lab_wire.sym} -630 290 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
@@ -81,3 +81,8 @@ C {devices/lab_wire.sym} -560 220 0 0 {name=p2 sig_type=std_logic lab=OUT}
 C {JNW_TR_SKY130A/JNWTR_BFX1_CV.sym} 130 20 0 0 {name=x5 }
 C {JNW_TR_SKY130A/JNWTR_DFRNQNX1_CV.sym} 250 80 0 0 {name=x6 }
 C {devices/ipin.sym} -650 -230 0 0 {name=p9 lab=CLK}
+C {devices/capa.sym} -360 220 0 0 {name=C1
+m=1
+value=245f
+footprint=1206
+device="ceramic capacitor"}

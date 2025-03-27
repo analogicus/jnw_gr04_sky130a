@@ -5,20 +5,20 @@ For details see <a href='tran_Sch_typical.html'>tran_Sch_typical.html</a>
 |**Name**|**Parameter**|**View**|**Min** | **Typ** | **Max**|
 |:---|:---|:---:|:---:|:---:|:---:|
 |dec_b voltage|dec\_b\_-40 | Spec |  |  |  |
-| | | ('Sch',)|0.19700 V | 0.19700 V | 0.19700 V |
+| | | ('Sch',)|80.00000 V | 80.00000 V | 80.00000 V |
 |dec_b voltage|dec\_b\_-20 | Spec |  |  |  |
-| | | ('Sch',)|0.07400 V | 0.07400 V | 0.07400 V |
+| | | ('Sch',)|24.00000 V | 24.00000 V | 24.00000 V |
 |dec_b voltage|dec\_b\_0 | Spec |  |  |  |
-| | | ('Sch',)|0.02300 V | 0.02300 V | 0.02300 V |
+| | | ('Sch',)|13.00000 V | 13.00000 V | 13.00000 V |
 |dec_b voltage|dec\_b\_20 | Spec |  |  |  |
-| | | ('Sch',)|0.00100 V | 0.00100 V | 0.00100 V |
+| | | ('Sch',)|3.00000 V | 3.00000 V | 3.00000 V |
 |dec_b voltage|dec\_b\_40 | Spec |  |  |  |
-| | | ('Sch',)| |  |  |
+| | | ('Sch',)|2.00000 V | 2.00000 V | 2.00000 V |
 |dec_b voltage|dec\_b\_60 | Spec |  |  |  |
-| | | ('Sch',)|0.00400 V | 0.00400 V | 0.00400 V |
+| | | ('Sch',)|2.00000 V | 2.00000 V | 2.00000 V |
 |dec_b voltage|dec\_b\_80 | Spec |  |  |  |
-| | | ('Sch',)| |  |  |
+| | | ('Sch',)|1.00000 V | 1.00000 V | 1.00000 V |
 |dec_b voltage|dec\_b\_100 | Spec |  |  |  |
-| | | ('Sch',)|0.00100 V | 0.00100 V | 0.00100 V |
+| | | ('Sch',)|1.00000 V | 1.00000 V | 1.00000 V |
 |dec_b voltage|dec\_b\_120 | Spec |  |  |  |
 | | | ('Sch',)| |  |  |

@@ -76,8 +76,6 @@ C {devices/ipin.sym} -240 -140 0 1 {name=p3 lab=VIN
 }
 C {devices/ipin.sym} -840 80 0 0 {name=p4 lab=VSS
 }
-C {devices/opin.sym} -240 -50 0 0 {name=p5 lab=Vo
-}
 C {devices/lab_wire.sym} -570 -260 0 0 {name=p7 sig_type=std_logic lab=Vbias
 }
 C {devices/lab_wire.sym} -450 -80 0 0 {name=p9 sig_type=std_logic lab=VIN_drain}
@@ -85,3 +83,4 @@ C {devices/lab_wire.sym} -380 -210 0 0 {name=p10 sig_type=std_logic lab=V_diff_p
 C {JNW_TR_SKY130A/JNWTR_RPPO2.sym} -570 -250 1 0 {name=x2 }
 C {devices/lab_wire.sym} -350 -140 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -610 -210 0 0 {name=p11 sig_type=std_logic lab=VSS}
+C {devices/iopin.sym} -240 -50 0 0 {name=p8 lab=Vo}
