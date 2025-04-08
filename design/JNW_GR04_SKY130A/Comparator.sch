@@ -82,7 +82,7 @@ C {JNW_TR_SKY130A/JNWTR_DFRNQNX1_CV.sym} 250 80 0 0 {name=x6 }
 C {devices/ipin.sym} -650 -230 0 0 {name=p9 lab=CLK}
 C {devices/capa.sym} -360 220 0 0 {name=C1
 m=1
-value=245f
+value=2p
 footprint=1206
 device="ceramic capacitor"}
 C {JNW_GR04_SKY130A/Opamp_test.sym} 10 20 0 0 {name=x1}
