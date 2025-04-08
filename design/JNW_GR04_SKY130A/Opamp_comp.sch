@@ -52,7 +52,6 @@ N 200 310 220 310 {lab=Vo}
 N 380 310 400 310 {lab=Vo}
 N -90 -120 -90 -30 {lab=VDD}
 N 100 -120 100 -30 {lab=VDD}
-N -130 150 -110 150 {lab=VSS}
 N -90 330 -90 440 {lab=VSS}
 N -90 250 -90 330 {lab=VSS}
 N -30 390 -10 390 {lab=VIN_drain}
@@ -65,6 +64,9 @@ N 180 440 340 440 {lab=VSS}
 N 340 -120 340 270 {lab=VDD}
 N 100 -120 340 -120 {lab=VDD}
 N 300 310 380 310 {lab=Vo}
+N -90 170 -90 190 {lab=VSS}
+N -130 150 -110 150 {lab=VSS}
+N -130 150 -130 440 {lab=VSS}
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} 220 390 0 1 {name=x1[1:0]}
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -10 390 0 0 {name=x4[1:0]}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -10 220 0 0 {name=x3[3:0]}
@@ -88,6 +90,5 @@ C {devices/lab_wire.sym} -90 100 0 0 {name=p7 sig_type=std_logic lab=Vbias
 }
 C {devices/lab_wire.sym} 30 280 0 0 {name=p9 sig_type=std_logic lab=VIN_drain}
 C {devices/lab_wire.sym} 100 150 0 0 {name=p10 sig_type=std_logic lab=V_diff_pair_bias}
-C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} -90 110 1 0 {name=x2 }
 C {devices/lab_wire.sym} 130 220 0 0 {name=p6 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} -130 150 0 0 {name=p11 sig_type=std_logic lab=VSS}
+C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} -90 110 1 0 {name=x2 }

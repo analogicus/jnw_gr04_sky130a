@@ -75,7 +75,6 @@ C {devices/lab_wire.sym} -240 140 0 0 {name=p6 sig_type=std_logic lab=VSS
 C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -510 220 0 0 {name=x4 }
 C {devices/lab_wire.sym} -630 290 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
-C {JNW_GR04_SKY130A/Opamp_comp.sym} 20 30 0 0 {name=x1}
 C {devices/lab_wire.sym} -360 30 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}
 C {devices/lab_wire.sym} -560 220 0 0 {name=p2 sig_type=std_logic lab=OUT}
 C {JNW_TR_SKY130A/JNWTR_BFX1_CV.sym} 130 20 0 0 {name=x5 }
@@ -86,3 +85,4 @@ m=1
 value=245f
 footprint=1206
 device="ceramic capacitor"}
+C {JNW_GR04_SKY130A/Opamp_test.sym} 10 20 0 0 {name=x1}
