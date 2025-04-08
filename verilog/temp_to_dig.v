@@ -1,26 +1,29 @@
-
 module temp_to_dig (
-           input wire         clk,
-           input wire         analog_out,
-           output logic [7:0] b
-           );
+    input  logic       clk,
+    input  logic       analog_out,
+    output logic [7:0] b
+);
 
-   logic                      rst = 0;
+  // Internal counter to count clock cycles during charging
+  logic [7:0] counter;
+  // Delayed version of out to detect a rising edge
+  logic out_d;
 
-   always_ff @(posedge clk) begin
-      if(analog_out>0.8)
-        rst <= 1;
-      else
-        rst <= 0;
-   end
+  always_ff @(posedge clk) begin
+    // Capture the previous value of out for edge detection
+    out_d <= analog_out;
 
-   always_ff @(posedge clk) begin
-      if(rst)
-        b <= 0;
-      else
-        b <= b + 1;
-   end // dig
+    // On the rising edge of 'out'
+    if (analog_out && !out_d) begin
+      b       <= counter;  // Capture the current count into b
+      counter <= 0;        // Reset counter for the next charging cycle
+    end
+    // Otherwise, if 'out' is not asserted, increment the counter
+    else if (!analog_out) begin
+      counter <= counter + 1;
+    end
+    // When out remains high (if it spans multiple clocks), hold counter value.
+    // (b remains unchanged until a new rising edge is detected)
+  end
 
 endmodule
-
-

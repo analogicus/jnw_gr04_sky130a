@@ -24,31 +24,37 @@ The schematic can be found in the design/JNW_GR04_SKY130A folder and is named PT
 
 The PTAT circuit was simulated for different temperatures, below is a plot of the I_OUT current vs temp: 
 
-![Current vs. temperature](sim/JNW_GR04/I_out_values.png)
+![Current vs. temperature](sim/PTAT/I_out_values.png)
 
-The current I_OUT does not give an exact linear relation to the temperature, likely due to the opamp not being ideal. 
+The current I_OUT gives an almost proportional temperature/current relationship. We think this is good enough.
+A problem with it however is that the current at negative 40 degrees is almost zero. Meaning it takes a long time to charge the comparator input capacitor.
 
-Below is a plot of the voltage difference across the resistor, the voltage does not give a linear relation to the temperature either. (Add something about the quadratic fit)
-
-![Current vs. temperature](sim/JNW_GR04/voltage_difference.png)
+![Current vs. temperature](sim/PTAT/voltage_difference.png)
 
 ## The digital output circuit (Comparator.sch)
 
 The digital output circuit consists of the PTAT circuit, where the temperature dependent current is called I_PTAT for this instance. The digital output circuit consist of a comparator, called Opamp_comp.sch, which compares I_PTAT to a reference voltage Vref at 1V. If I_PTAT becomes larger than Vref, the output of the comparator becomes high. The time it takes for the comparator to give a high output depends on the temperature, which is a result of a higher temperature equaling a larger current and vice versa. 
 
-Below is a plot of the output OUT simulated for different temperatures. 
 
 ## The code block
 
+<<<<<<< HEAD
 The verilog code counts clock cycles until the comparator output goes high, from low.
 
 ## Digital Output
 
 
+=======
+The verilog code increments a counter variable for every clock cycle until Comparator gives logical high on the output.
+We can then estimate current based on the below plot (this can be done externally)
+
+
+![dec_b vs Temperature](sim/Comparator/dec_b_vs_temp.png)
+>>>>>>> main
 
 # Problems present
-
-The PTAT circuit does not give an exact linear relation to the temperature, to make the relation more similiar we would need to further work on the opamp used in the circuit. 
+The current at negative 40 degrees is really low - as shown on the above plot, the comparator takes alot more clock cycles to give logical high on the output.
+We can fix this by adding a offset to shift the current higher.
 
 Ideally we would simulate the opamps stability. 
 We also need to simulate for different corners and add a power up functonality. 

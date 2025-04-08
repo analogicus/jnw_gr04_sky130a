@@ -15,7 +15,7 @@ doc:
   #libraries:
   libraries:
     JNW_GR04_SKY130A:
-      - JNW_GR04
+      - Comparator
   
 sim:
-  JNW_GR04: make typical && make summary
+  Comparator: make typical && make summary
