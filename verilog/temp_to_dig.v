@@ -1,7 +1,8 @@
 module temp_to_dig (
     input  logic       clk,
     input  logic       analog_out,
-    output logic [7:0] b
+    output logic [7:0] b,
+    output logic       RESET
 );
 
   // Internal counter to count clock cycles during charging

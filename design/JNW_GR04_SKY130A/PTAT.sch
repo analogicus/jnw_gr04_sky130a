@@ -12,8 +12,7 @@ N -250 490 -250 550 {lab=VSS}
 N -310 550 -250 550 {lab=VSS}
 N 70 -150 130 -150 {lab=VDD_1V8}
 N -430 550 -360 550 {lab=VSS}
-N 130 80 160 80 {lab=I_out}
-N 130 50 130 80 {lab=I_out}
+N 200 50 230 50 {lab=I_out}
 N 0 -150 70 -150 {lab=VDD_1V8}
 N -240 150 -240 180 {lab=VD1_out}
 N -170 180 -140 180 {lab=VD1_out}
@@ -50,7 +49,6 @@ N -380 100 -380 130 {lab=Vin}
 N -380 90 -380 100 {lab=Vin}
 N -140 410 -140 440 {lab=VD2_out}
 N -380 130 -380 270 {lab=Vin}
-N -140 550 -140 560 {lab=VSS}
 N -140 550 -100 550 {lab=VSS}
 N -140 350 -140 410 {lab=VD2_out}
 N -120 310 -100 310 {lab=VSS}
@@ -64,12 +62,13 @@ N -410 -80 -380 -80 {lab=VDD_1V8}
 N -140 -30 -90 -30 {lab=VDD_1V8}
 N -90 -80 -90 -30 {lab=VDD_1V8}
 N -140 -80 -90 -80 {lab=VDD_1V8}
-N 130 -30 160 -30 {lab=VDD_1V8}
-N 160 -80 160 -30 {lab=VDD_1V8}
-N 130 -80 160 -80 {lab=VDD_1V8}
 N -250 -30 -250 -0 {lab=Vo}
 N -250 -50 -250 -30 {lab=Vo}
 N -50 -30 90 -30 {lab=Vo}
+N 130 50 200 50 {lab=I_out}
+N 130 -30 150 -30 {lab=VDD_1V8}
+N 150 -80 150 -30 {lab=VDD_1V8}
+N 130 -80 150 -80 {lab=VDD_1V8}
 C {devices/ipin.sym} -460 -150 0 0 {name=p4 lab=VDD_1V8
 }
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -340 -30 0 1 {name=x6
@@ -86,7 +85,7 @@ m=8
 spiceprefix=X
 }
 C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -250 -60 0 0 {name=x2 }
-C {devices/iopin.sym} 160 80 2 1 {name=I_out1 lab=I_out
+C {devices/opin.sym} 230 50 2 1 {name=I_out1 lab=I_out
 }
 C {devices/ipin.sym} -430 550 0 0 {name=p7 lab=VSS}
 C {devices/lab_wire.sym} -380 180 0 0 {name=p8 sig_type=std_logic lab=Vin}

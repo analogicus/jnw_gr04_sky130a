@@ -9,18 +9,78 @@
 #  digits: <significant digits>
 #  unit: Unit
 
+#dec_b:
+#  src:
+#    - dec_b_-40
+#    - dec_b_-20
+#    - dec_b_0
+#    - dec_b_20
+#    - dec_b_40
+#    - dec_b_60
+#    - dec_b_80
+#    - dec_b_100
+#    - dec_b_120
+#  name: dec_b voltage
+#  scale: 1
+#  digits: 5
+#  unit: V
+
+#dec_b:
+#  src:
+#    - dec_b_-40
+#    - dec_b_-35
+#    - dec_b_-30
+#    - dec_b_-25
+#    - dec_b_-20
+#    - dec_b_-15
+#    - dec_b_-10
+#    - dec_b_-5
+#    - dec_b_0
+#    - dec_b_5
+#    - dec_b_10
+#    - dec_b_15
+#    - dec_b_20
+#    - dec_b_25
+#    - dec_b_30
+#    - dec_b_35
+#    - dec_b_40
+#    - dec_b_45
+#    - dec_b_50
+#    - dec_b_55
+#    - dec_b_60
+#    - dec_b_65
+#    - dec_b_70
+#    - dec_b_75
+#    - dec_b_80
+#    - dec_b_85
+#    - dec_b_90
+#    - dec_b_95
+#    - dec_b_100
+#    - dec_b_105
+#    - dec_b_110
+#    - dec_b_115
+#    - dec_b_120
+#  name: dec_b voltage
+#  scale: 1
+#  digits: 5
+#  unit: V
+
 dec_b:
   src:
     - dec_b_-40
-    - dec_b_-20
     - dec_b_0
-    - dec_b_20
     - dec_b_40
-    - dec_b_60
     - dec_b_80
-    - dec_b_100
     - dec_b_120
   name: dec_b voltage
   scale: 1
   digits: 5
   unit: V
+
+#dec_b:
+#  src:
+#    - dec_b_80
+#  name: dec_b voltage
+#  scale: 1
+#  digits: 5
+#  unit: V
