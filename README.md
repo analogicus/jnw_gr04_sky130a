@@ -27,9 +27,14 @@ The PTAT circuit was simulated for different temperatures, below is a plot of th
 ![Current vs. temperature](sim/PTAT/I_out_values.png)
 
 The current I_OUT gives an almost proportional temperature/current relationship. We think this is good enough.
-A problem with it however is that the current at negative 40 degrees is almost zero. Meaning it takes a long time to charge the comparator input capacitor.
 
-![Current vs. temperature](sim/PTAT/voltage_difference.png)
+
+![Current vs. temperature etc](sim/PTAT/iout_all_etc.png)
+
+![Current vs. temperature mc](sim/PTAT/iout_all_mc.png)
+
+
+
 
 ## The digital output circuit (Comparator.sch)
 
