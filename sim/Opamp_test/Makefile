@@ -5,8 +5,8 @@ all: typical etc mc summary
 
 
 TB=tran
-VIEW=Sch
-#VIEW=Lay
+#VIEW=Sch
+VIEW=Lay
 CELL=Opamp_test
 LIB =JNW_GR04_SKY130A
 OPT=
