@@ -35,10 +35,10 @@ N -390 -60 -370 -60 {lab=VSS}
 N -240 -260 -240 -140 {lab=#net1}
 N -370 -30 -370 -20 {lab=VSS}
 N -240 -30 -240 -20 {lab=VSS}
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -280 -110 0 0 {name=x4}
-C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -330 -110 0 1 {name=x1[9:0]}
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -200 -290 0 1 {name=x2[9:0]}
-C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -140 -290 0 0 {name=x3}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -280 -110 0 0 {name=xb4}
+C {JNW_ATR_SKY130A/JNWATR_NCH_4C5F0.sym} -330 -110 0 1 {name=xb1[9:0]}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -200 -290 0 1 {name=xa2[9:0]}
+C {JNW_ATR_SKY130A/JNWATR_PCH_4C5F0.sym} -140 -290 0 0 {name=xa3}
 C {devices/ipin.sym} -460 -390 0 0 {name=p1 lab=VDD_1V8}
 C {devices/ipin.sym} -460 -220 0 0 {name=p2 lab=I_IN}
 C {devices/ipin.sym} -460 -20 0 0 {name=p3 lab=VSS
