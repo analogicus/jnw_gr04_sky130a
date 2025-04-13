@@ -15,7 +15,12 @@ Our goal is to make a temperature sensor for the semester project in TFE4188.
 # How
 
 To design the temperature sensor, we are using Xschem for circuit design and simulating the behavior with ngspice. 
-The design is split into two different parts: a circuit that generates a current that is Proportional to Absolute Temperature (PTAT) and a circuit that converts the current temperature to a digital output. 
+The design is split into two different parts: a circuit that generates a current that is Proportional to Absolute Temperature (PTAT) and a circuit that converts the current temperature to a digital output.
+
+## Layout (Digital Block not included)
+Picture of the analog circuit layout
+![Analog Circuit Layout](Circuit_Diagram.png)
+
 ## The PTAT circuit (PTAT.sch)
 
 The PTAT circuit is designed using two diodes biased at different currents connected to the two inputs of an amplifier. This results in a temperature dependent current over a resistor connected to one of the diodes. The temperature current is then mirrored using a transistor, giving the temperature dependent current output called I_out. 

@@ -249,7 +249,7 @@ rect 1028 87 1272 119
 rect 1304 87 1307 119
 rect 996 84 1028 87
 rect 80 75 112 78
-use JNWATR_PCH_4C5F0  xa2_0 ~/pro/aicex/ip/jnw_gr04_sky130a/design/JNW_ATR_SKY130A
+use JNWATR_PCH_4C5F0  xa2_0 JNW_ATR_SKY130A
 timestamp 1734044400
 transform 1 0 0 0 1 0
 box -92 -64 668 464
@@ -293,7 +293,7 @@ use JNWATR_PCH_4C5F0  xa3
 timestamp 1734044400
 transform 1 0 0 0 1 4000
 box -92 -64 668 464
-use JNWATR_NCH_4C5F0  xb1_0 ../JNW_ATR_SKY130A
+use JNWATR_NCH_4C5F0  xb1_0 JNW_ATR_SKY130A
 timestamp 1734044400
 transform 1 0 916 0 1 0
 box -92 -64 668 464
