@@ -1,0 +1,28 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1744495200
+<< checkpaint >>
+rect 0 0 10888 4826
+use JNWATR_PCH_4C5F0 xa11 ../JNW_ATR_SKY130A
+transform 1 0 0 0 1 0
+box 0 0 1152 800
+use JNWATR_PCH_4C5F0 xa6 ../JNW_ATR_SKY130A
+transform 1 0 0 0 1 800
+box 0 800 1152 1600
+use JNWATR_PCH_4C5F0 xa9 ../JNW_ATR_SKY130A
+transform 1 0 0 0 1 1600
+box 0 1600 1152 2400
+use JNWTR_CAPX1 xc2 ../JNW_TR_SKY130A
+transform 1 0 1152 0 1 0
+box 1152 0 2232 1080
+use JNWTR_RPPO16 xd7 ../JNW_TR_SKY130A
+transform 1 0 2232 0 1 0
+box 2232 0 6704 3440
+use Opamp_test xe1 ../JNW_GR04_SKY130A
+transform 1 0 6704 0 1 0
+box 6704 0 10888 4826
+<< labels >>
+<< properties >>
+string FIXED_BBOX 0 0 10888 4826
+<< end >>
