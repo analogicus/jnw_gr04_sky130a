@@ -4,14 +4,11 @@ K {}
 V {}
 S {}
 E {}
-N 860 -620 860 -590 {lab=Vref}
 N 820 -350 1070 -350 {lab=VSS}
-N 860 -830 860 -770 {lab=VDD_1V8}
 N 830 -830 1080 -830 {lab=VDD_1V8}
 N 1080 -830 1080 -770 {lab=VDD_1V8}
 N 740 -830 830 -830 {lab=VDD_1V8}
-N 980 -610 1010 -610 {lab=I_PTAT}
-N 860 -710 860 -620 {lab=Vref}
+N 980 -610 1010 -610 {lab=I_PTAT_REDUCED}
 N 1080 -770 1080 -680 {lab=VDD_1V8}
 N 720 -350 820 -350 {lab=VSS}
 N 450 -820 450 -660 {lab=VDD_1V8}
@@ -23,12 +20,10 @@ N 440 -350 720 -350 {lab=VSS}
 N 420 -830 450 -830 {lab=VDD_1V8}
 N 1080 -570 1080 -350 {lab=VSS}
 N 1070 -350 1080 -350 {lab=VSS}
-N 860 -530 860 -500 {lab=VSS}
-N 850 -480 850 -450 {lab=I_PTAT}
-N 850 -480 960 -480 {lab=I_PTAT}
-N 960 -610 960 -480 {lab=I_PTAT}
+N 850 -480 850 -450 {lab=I_PTAT_REDUCED}
+N 850 -480 960 -480 {lab=I_PTAT_REDUCED}
+N 960 -610 960 -480 {lab=I_PTAT_REDUCED}
 N 850 -390 850 -350 {lab=VSS}
-N 760 -420 810 -420 {lab=RESET}
 N 850 -420 880 -420 {lab=VSS}
 N 880 -420 880 -350 {lab=VSS}
 N 1080 -350 1230 -350 {lab=VSS}
@@ -48,7 +43,7 @@ N 1310 -680 1320 -680 {lab=#net1}
 N 1350 -590 1350 -550 {lab=VDD_1V8}
 N 1350 -550 1450 -550 {lab=VDD_1V8}
 N 1450 -830 1450 -550 {lab=VDD_1V8}
-N 960 -480 960 -450 {lab=I_PTAT}
+N 960 -480 960 -450 {lab=I_PTAT_REDUCED}
 N 960 -380 960 -350 {lab=VSS}
 N 1230 -350 1380 -350 {lab=VSS}
 N 1240 -830 1240 -660 {lab=VDD_1V8}
@@ -57,38 +52,46 @@ N 1380 -350 1570 -350 {lab=VSS}
 N 1570 -350 1630 -350 {lab=VSS}
 N 450 -470 450 -350 {lab=VSS}
 N 410 -350 440 -350 {lab=VSS}
-N 960 -610 980 -610 {lab=I_PTAT}
+N 960 -610 980 -610 {lab=I_PTAT_REDUCED}
 N 600 -610 640 -610 {lab=I_PTAT}
-N 860 -640 1010 -640 {lab=Vref}
-N 760 -610 960 -610 {lab=I_PTAT}
-N 640 -610 760 -610 {lab=I_PTAT}
-C {devices/res.sym} 860 -740 0 0 {name=R1
-value=8k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 860 -560 0 0 {name=R2
-value=10k
-footprint=1206
-device=resistor
-m=1}
+N 670 -830 670 -790 {lab=VDD_1V8}
+N 670 -710 670 -590 {lab=Vref}
+N 670 -510 670 -490 {lab=VSS}
+N 630 -490 670 -490 {lab=VSS}
+N 630 -750 630 -490 {lab=VSS}
+N 630 -750 650 -750 {lab=VSS}
+N 630 -550 650 -550 {lab=VSS}
+N 790 -420 810 -420 {lab=RESET}
+N 630 -490 630 -350 {lab=VSS}
+N 670 -640 950 -640 {lab=Vref}
+N 950 -640 1010 -640 {lab=Vref}
+N 640 -610 720 -610 {lab=I_PTAT}
+N 720 -610 720 -580 {lab=I_PTAT}
+N 720 -580 740 -580 {lab=I_PTAT}
+N 930 -580 960 -580 {lab=I_PTAT_REDUCED}
+N 830 -830 830 -630 {lab=VDD_1V8}
+N 670 -490 830 -490 {lab=VSS}
+N 830 -530 830 -490 {lab=VSS}
 C {devices/ipin.sym} 420 -830 0 0 {name=p1 lab=VDD_1V8}
 C {devices/ipin.sym} 410 -350 0 0 {name=p3 lab=VSS}
 C {devices/opin.sym} 1530 -680 0 0 {name=p4 lab=OUT}
-C {devices/lab_wire.sym} 860 -640 0 0 {name=p5 sig_type=std_logic lab=Vref}
+C {devices/lab_wire.sym} 670 -640 0 0 {name=p5 sig_type=std_logic lab=Vref}
 C {JNW_GR04_SKY130A/PTAT.sym} 450 -610 0 0 {name=x2}
-C {devices/lab_wire.sym} 860 -500 0 0 {name=p6 sig_type=std_logic lab=VSS
-}
-C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 810 -420 0 0 {name=x4[4:0]}
+C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 810 -420 0 0 {name=x8}
 C {devices/lab_wire.sym} 540 -350 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
-C {devices/lab_wire.sym} 620 -610 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}
-C {devices/lab_wire.sym} 760 -420 0 0 {name=p2 sig_type=std_logic lab=RESET}
+C {devices/lab_wire.sym} 650 -610 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}
+C {devices/lab_wire.sym} 790 -420 0 0 {name=p2 sig_type=std_logic lab=RESET}
 C {JNW_TR_SKY130A/JNWTR_DFRNQNX1_CV.sym} 1320 -620 0 0 {name=x6 }
 C {JNW_GR04_SKY130A/Opamp_test.sym} 1080 -620 0 0 {name=x1}
-C {JNW_TR_SKY130A/JNWTR_CAPX4.sym} 960 -390 0 0 {name=x3[7:0]}
+C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 960 -390 0 0 {name=x7}
 C {devices/lab_wire.sym} 1160 -620 0 1 {name=p9 sig_type=std_logic lab=COMP
 }
 C {JNW_TR_SKY130A/JNWTR_SCX1_CV.sym} 1200 -620 0 0 {name=x9}
 C {devices/lab_wire.sym} 1320 -620 0 0 {name=p11 sig_type=std_logic lab=RESET
+}
+C {JNW_TR_SKY130A/JNWTR_RPPO8.sym} 670 -790 1 0 {name=x3 }
+C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} 670 -590 1 0 {name=x4 }
+C {JNW_GR04_SKY130A/Current_mirror.sym} 890 -580 0 0 {name=x5}
+C {devices/lab_wire.sym} 960 -610 0 0 {name=p6 sig_type=std_logic lab=I_PTAT_REDUCED
 }

@@ -4,105 +4,69 @@ For details see <a href='tran_Sch_typical.html'>tran_Sch_typical.html</a>
 
 |**Name**|**Parameter**|**View**|**Min** | **Typ** | **Max**|
 |:---|:---|:---:|:---:|:---:|:---:|
-|VD1 voltage|vd1\_-40 | Spec |  |  |  |
-| | | ('Sch',)|0.78818 V | 0.78818 V | 0.78818 V |
-|VD1 voltage|vd1\_-30 | Spec |  |  |  |
-| | | ('Sch',)|0.80980 V | 0.80980 V | 0.80980 V |
-|VD1 voltage|vd1\_-20 | Spec |  |  |  |
-| | | ('Sch',)|0.84879 V | 0.84879 V | 0.84879 V |
-|VD1 voltage|vd1\_-10 | Spec |  |  |  |
-| | | ('Sch',)|0.91077 V | 0.91077 V | 0.91077 V |
-|VD1 voltage|vd1\_0 | Spec |  |  |  |
-| | | ('Sch',)|1.00041 V | 1.00041 V | 1.00041 V |
-|VD1 voltage|vd1\_10 | Spec |  |  |  |
-| | | ('Sch',)|1.12064 V | 1.12064 V | 1.12064 V |
-|VD1 voltage|vd1\_20 | Spec |  |  |  |
-| | | ('Sch',)|1.27168 V | 1.27168 V | 1.27168 V |
-|VD1 voltage|vd1\_30 | Spec |  |  |  |
-| | | ('Sch',)|1.44783 V | 1.44783 V | 1.44783 V |
-|VD1 voltage|vd1\_40 | Spec |  |  |  |
-| | | ('Sch',)|1.58597 V | 1.58597 V | 1.58597 V |
-|VD1 voltage|vd1\_50 | Spec |  |  |  |
-| | | ('Sch',)|1.63333 V | 1.63333 V | 1.63333 V |
-|VD1 voltage|vd1\_60 | Spec |  |  |  |
-| | | ('Sch',)|1.65715 V | 1.65715 V | 1.65715 V |
-|VD1 voltage|vd1\_70 | Spec |  |  |  |
-| | | ('Sch',)|1.67247 V | 1.67247 V | 1.67247 V |
-|VD1 voltage|vd1\_80 | Spec |  |  |  |
-| | | ('Sch',)|1.68336 V | 1.68336 V | 1.68336 V |
-|VD1 voltage|vd1\_90 | Spec |  |  |  |
-| | | ('Sch',)|1.69155 V | 1.69155 V | 1.69155 V |
-|VD1 voltage|vd1\_100 | Spec |  |  |  |
-| | | ('Sch',)|1.69792 V | 1.69792 V | 1.69792 V |
-|VD1 voltage|vd1\_110 | Spec |  |  |  |
-| | | ('Sch',)|1.70300 V | 1.70300 V | 1.70300 V |
-|VD1 voltage|vd1\_120 | Spec |  |  |  |
-| | | ('Sch',)|1.70712 V | 1.70712 V | 1.70712 V |
-|VD2 voltage|vd2\_-40 | Spec |  |  |  |
-| | | ('Sch',)|0.74838 V | 0.74838 V | 0.74838 V |
-|VD2 voltage|vd2\_-30 | Spec |  |  |  |
-| | | ('Sch',)|0.73987 V | 0.73987 V | 0.73987 V |
-|VD2 voltage|vd2\_-20 | Spec |  |  |  |
-| | | ('Sch',)|0.73116 V | 0.73116 V | 0.73116 V |
-|VD2 voltage|vd2\_-10 | Spec |  |  |  |
-| | | ('Sch',)|0.72205 V | 0.72205 V | 0.72205 V |
-|VD2 voltage|vd2\_0 | Spec |  |  |  |
-| | | ('Sch',)|0.71238 V | 0.71238 V | 0.71238 V |
-|VD2 voltage|vd2\_10 | Spec |  |  |  |
-| | | ('Sch',)|0.70205 V | 0.70205 V | 0.70205 V |
-|VD2 voltage|vd2\_20 | Spec |  |  |  |
-| | | ('Sch',)|0.69099 V | 0.69099 V | 0.69099 V |
-|VD2 voltage|vd2\_30 | Spec |  |  |  |
-| | | ('Sch',)|0.67909 V | 0.67909 V | 0.67909 V |
-|VD2 voltage|vd2\_40 | Spec |  |  |  |
-| | | ('Sch',)|0.66479 V | 0.66479 V | 0.66479 V |
-|VD2 voltage|vd2\_50 | Spec |  |  |  |
-| | | ('Sch',)|0.64744 V | 0.64744 V | 0.64744 V |
-|VD2 voltage|vd2\_60 | Spec |  |  |  |
-| | | ('Sch',)|0.62928 V | 0.62928 V | 0.62928 V |
-|VD2 voltage|vd2\_70 | Spec |  |  |  |
-| | | ('Sch',)|0.61074 V | 0.61074 V | 0.61074 V |
-|VD2 voltage|vd2\_80 | Spec |  |  |  |
-| | | ('Sch',)|0.59195 V | 0.59195 V | 0.59195 V |
-|VD2 voltage|vd2\_90 | Spec |  |  |  |
-| | | ('Sch',)|0.57296 V | 0.57296 V | 0.57296 V |
-|VD2 voltage|vd2\_100 | Spec |  |  |  |
-| | | ('Sch',)|0.55378 V | 0.55378 V | 0.55378 V |
-|VD2 voltage|vd2\_110 | Spec |  |  |  |
-| | | ('Sch',)|0.53444 V | 0.53444 V | 0.53444 V |
-|VD2 voltage|vd2\_120 | Spec |  |  |  |
-| | | ('Sch',)|0.51495 V | 0.51495 V | 0.51495 V |
-|I_out Current|i\_out\_-40 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_-30 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_-20 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_-10 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_0 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_10 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_20 | Spec |  |  |  |
-| | | ('Sch',)|0.00000 A | 0.00000 A | 0.00000 A |
-|I_out Current|i\_out\_30 | Spec |  |  |  |
-| | | ('Sch',)|0.00001 A | 0.00001 A | 0.00001 A |
-|I_out Current|i\_out\_40 | Spec |  |  |  |
-| | | ('Sch',)|0.00001 A | 0.00001 A | 0.00001 A |
-|I_out Current|i\_out\_50 | Spec |  |  |  |
-| | | ('Sch',)|0.00001 A | 0.00001 A | 0.00001 A |
-|I_out Current|i\_out\_60 | Spec |  |  |  |
-| | | ('Sch',)|0.00001 A | 0.00001 A | 0.00001 A |
-|I_out Current|i\_out\_70 | Spec |  |  |  |
-| | | ('Sch',)|0.00002 A | 0.00002 A | 0.00002 A |
-|I_out Current|i\_out\_80 | Spec |  |  |  |
-| | | ('Sch',)|0.00002 A | 0.00002 A | 0.00002 A |
-|I_out Current|i\_out\_90 | Spec |  |  |  |
-| | | ('Sch',)|0.00002 A | 0.00002 A | 0.00002 A |
-|I_out Current|i\_out\_100 | Spec |  |  |  |
-| | | ('Sch',)|0.00002 A | 0.00002 A | 0.00002 A |
-|I_out Current|i\_out\_110 | Spec |  |  |  |
-| | | ('Sch',)|0.00003 A | 0.00003 A | 0.00003 A |
-|I_out Current|i\_out\_120 | Spec |  |  |  |
-| | | ('Sch',)|0.00003 A | 0.00003 A | 0.00003 A |
+|dec_b voltage|dec\_b\_-40 | Spec |  |  |  |
+| | | ('Sch',)|194.00000 V | 194.00000 V | 194.00000 V |
+|dec_b voltage|dec\_b\_-35 | Spec |  |  |  |
+| | | ('Sch',)|190.00000 V | 190.00000 V | 190.00000 V |
+|dec_b voltage|dec\_b\_-30 | Spec |  |  |  |
+| | | ('Sch',)|186.00000 V | 186.00000 V | 186.00000 V |
+|dec_b voltage|dec\_b\_-25 | Spec |  |  |  |
+| | | ('Sch',)|181.00000 V | 181.00000 V | 181.00000 V |
+|dec_b voltage|dec\_b\_-20 | Spec |  |  |  |
+| | | ('Sch',)|177.00000 V | 177.00000 V | 177.00000 V |
+|dec_b voltage|dec\_b\_-15 | Spec |  |  |  |
+| | | ('Sch',)|173.00000 V | 173.00000 V | 173.00000 V |
+|dec_b voltage|dec\_b\_-10 | Spec |  |  |  |
+| | | ('Sch',)|170.00000 V | 170.00000 V | 170.00000 V |
+|dec_b voltage|dec\_b\_-5 | Spec |  |  |  |
+| | | ('Sch',)|166.00000 V | 166.00000 V | 166.00000 V |
+|dec_b voltage|dec\_b\_0 | Spec |  |  |  |
+| | | ('Sch',)|162.00000 V | 162.00000 V | 162.00000 V |
+|dec_b voltage|dec\_b\_5 | Spec |  |  |  |
+| | | ('Sch',)|159.00000 V | 159.00000 V | 159.00000 V |
+|dec_b voltage|dec\_b\_10 | Spec |  |  |  |
+| | | ('Sch',)|155.00000 V | 155.00000 V | 155.00000 V |
+|dec_b voltage|dec\_b\_15 | Spec |  |  |  |
+| | | ('Sch',)|153.00000 V | 153.00000 V | 153.00000 V |
+|dec_b voltage|dec\_b\_20 | Spec |  |  |  |
+| | | ('Sch',)|150.00000 V | 150.00000 V | 150.00000 V |
+|dec_b voltage|dec\_b\_25 | Spec |  |  |  |
+| | | ('Sch',)|147.00000 V | 147.00000 V | 147.00000 V |
+|dec_b voltage|dec\_b\_30 | Spec |  |  |  |
+| | | ('Sch',)|143.00000 V | 143.00000 V | 143.00000 V |
+|dec_b voltage|dec\_b\_35 | Spec |  |  |  |
+| | | ('Sch',)|141.00000 V | 141.00000 V | 141.00000 V |
+|dec_b voltage|dec\_b\_40 | Spec |  |  |  |
+| | | ('Sch',)|139.00000 V | 139.00000 V | 139.00000 V |
+|dec_b voltage|dec\_b\_45 | Spec |  |  |  |
+| | | ('Sch',)|136.00000 V | 136.00000 V | 136.00000 V |
+|dec_b voltage|dec\_b\_50 | Spec |  |  |  |
+| | | ('Sch',)|133.00000 V | 133.00000 V | 133.00000 V |
+|dec_b voltage|dec\_b\_55 | Spec |  |  |  |
+| | | ('Sch',)|132.00000 V | 132.00000 V | 132.00000 V |
+|dec_b voltage|dec\_b\_60 | Spec |  |  |  |
+| | | ('Sch',)|129.00000 V | 129.00000 V | 129.00000 V |
+|dec_b voltage|dec\_b\_65 | Spec |  |  |  |
+| | | ('Sch',)|127.00000 V | 127.00000 V | 127.00000 V |
+|dec_b voltage|dec\_b\_70 | Spec |  |  |  |
+| | | ('Sch',)|126.00000 V | 126.00000 V | 126.00000 V |
+|dec_b voltage|dec\_b\_75 | Spec |  |  |  |
+| | | ('Sch',)|123.00000 V | 123.00000 V | 123.00000 V |
+|dec_b voltage|dec\_b\_80 | Spec |  |  |  |
+| | | ('Sch',)|121.00000 V | 121.00000 V | 121.00000 V |
+|dec_b voltage|dec\_b\_85 | Spec |  |  |  |
+| | | ('Sch',)|119.00000 V | 119.00000 V | 119.00000 V |
+|dec_b voltage|dec\_b\_90 | Spec |  |  |  |
+| | | ('Sch',)|117.00000 V | 117.00000 V | 117.00000 V |
+|dec_b voltage|dec\_b\_95 | Spec |  |  |  |
+| | | ('Sch',)|115.00000 V | 115.00000 V | 115.00000 V |
+|dec_b voltage|dec\_b\_100 | Spec |  |  |  |
+| | | ('Sch',)|114.00000 V | 114.00000 V | 114.00000 V |
+|dec_b voltage|dec\_b\_105 | Spec |  |  |  |
+| | | ('Sch',)|112.00000 V | 112.00000 V | 112.00000 V |
+|dec_b voltage|dec\_b\_110 | Spec |  |  |  |
+| | | ('Sch',)|111.00000 V | 111.00000 V | 111.00000 V |
+|dec_b voltage|dec\_b\_115 | Spec |  |  |  |
+| | | ('Sch',)|110.00000 V | 110.00000 V | 110.00000 V |
+|dec_b voltage|dec\_b\_120 | Spec |  |  |  |
+| | | ('Sch',)|108.00000 V | 108.00000 V | 108.00000 V |
