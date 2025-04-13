@@ -325,11 +325,11 @@ use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  xb1
 timestamp 1737662937
 transform 1 0 -1290 0 1 4
 box 0 0 1340 1340
-use JNWTR_CAPX1  xc1 JNW_TR_SKY130A
+use JNWTR_CAPX1  xc1 ../JNW_TR_SKY130A
 timestamp 1737500400
 transform 1 0 -1700 0 1 6700
 box 0 0 1080 1080
-use JNWATR_PCH_4C5F0  xm4 JNW_ATR_SKY130A
+use JNWATR_PCH_4C5F0  xm4 ../JNW_ATR_SKY130A
 timestamp 1734044400
 transform 0 1 -3796 -1 0 7162
 box -184 -128 1336 928
@@ -345,7 +345,7 @@ use Opamp_test  xo1
 timestamp 1744566163
 transform 1 0 -6922 0 1 -246
 box 2222 1594 6906 6420
-use JNWTR_RPPO16  xr1 JNW_TR_SKY130A
+use JNWTR_RPPO16  xr1 ../JNW_TR_SKY130A
 timestamp 1744547463
 transform 0 -1 3450 -1 0 7061
 box 0 0 4472 3440
