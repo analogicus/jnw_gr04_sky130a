@@ -13,9 +13,9 @@
 PREFIX=
 LIB=JNW_GR04_SKY130A
 #CELL=JNW_GR04
-CELL=Opamp_test
+CELL=PTAT
 
 #- Provide cells you want to check for the lvsall drcall commands
-CELLS = Opamp_test
+CELLS = PTAT
 
 include ../tech/make/core.make
