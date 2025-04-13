@@ -1,0 +1,6 @@
+{
+	"DESIGN_NAME": "temp_to_dig",
+	"VERILOG_FILES": "dir::../../temp_to_dig.v",
+	"CLOCK_PORT": "clk",
+	"CLOCK_PERIOD": 48
+}
