@@ -87,7 +87,7 @@ m=8
 spiceprefix=X
 }
 C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} -250 -60 0 0 {name=xc1 }
-C {devices/iopin.sym} 160 80 2 1 {name=I_out1 lab=I_out
+C {devices/opin.sym} 230 50 2 1 {name=I_out1 lab=I_out
 
 }
 C {devices/ipin.sym} -430 550 0 0 {name=p7 lab=VSS}

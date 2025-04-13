@@ -5,7 +5,7 @@ author: Group 4 Marte, Michal, Siver, Halvor
 # Your github username
 github: analogicus
 # Something funny and descriptive
-tagline: Milestone 1 attempt 1
+tagline: Milestone 3 attempt 1
 # Your email, if you so wish
 email: anon@anon.com
 # Your github site, usually <github username>.github.io
@@ -16,6 +16,11 @@ doc:
   libraries:
     JNW_GR04_SKY130A:
       - JNW_GR04
+      - PTAT
+      - Opamp_test
+
   
 sim:
   JNW_GR04: make typical && make summary
+  PTAT: make typical
+  Opamp_test: make typical
