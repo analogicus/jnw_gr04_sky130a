@@ -250,47 +250,47 @@ rect 2056 174 2544 238
 rect 2608 174 2614 238
 rect 1992 168 2056 174
 rect 160 150 224 156
-use JNWATR_PCH_4C5F0__0  xa2_0 ../JNW_ATR_SKY130A
+use JNWATR_PCH_4C5F0  xa2_0 ../JNW_ATR_SKY130A
 timestamp 1734044400
 transform 1 0 0 0 1 0
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_1
+use JNWATR_PCH_4C5F0  xa2_1
 timestamp 1734044400
 transform 1 0 0 0 1 800
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_2
+use JNWATR_PCH_4C5F0  xa2_2
 timestamp 1734044400
 transform 1 0 0 0 1 1600
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_3
+use JNWATR_PCH_4C5F0  xa2_3
 timestamp 1734044400
 transform 1 0 0 0 1 2400
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_4
+use JNWATR_PCH_4C5F0  xa2_4
 timestamp 1734044400
 transform 1 0 0 0 1 3200
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_5
+use JNWATR_PCH_4C5F0  xa2_5
 timestamp 1734044400
 transform 1 0 0 0 1 4000
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_6
+use JNWATR_PCH_4C5F0  xa2_6
 timestamp 1734044400
 transform 1 0 0 0 1 4800
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_7
+use JNWATR_PCH_4C5F0  xa2_7
 timestamp 1734044400
 transform 1 0 0 0 1 5600
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_8
+use JNWATR_PCH_4C5F0  xa2_8
 timestamp 1734044400
 transform 1 0 0 0 1 6400
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa2_9
+use JNWATR_PCH_4C5F0  xa2_9
 timestamp 1734044400
 transform 1 0 0 0 1 7200
 box -184 -128 1336 928
-use JNWATR_PCH_4C5F0__0  xa3
+use JNWATR_PCH_4C5F0  xa3
 timestamp 1734044400
 transform 1 0 0 0 1 8000
 box -184 -128 1336 928
