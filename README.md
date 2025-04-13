@@ -17,6 +17,11 @@ Our goal is to make a temperature sensor for the semester project in TFE4188.
 To design the temperature sensor, we are using Xschem for circuit design and simulating the behavior with ngspice. 
 The design is split into two different parts: a circuit that generates a current that is Proportional to Absolute Temperature (PTAT) and a circuit that converts the current temperature to a digital output.
 
+## ERRORS
+LVS does not pass, we think this is because the layout file for the Schmitt trigger is wrong, we have attempted to fix this but are unsure wether or not it was correct.
+GDS does not pass, some errors with paths, according to the output, the 3D design file has been generated locally.
+Digital Block is not present in top level file, but we have made it.
+
 ## Layout (Digital Block not included)
 Picture of the analog circuit layout
 ![Analog Circuit Layout](Circuit_Diagram.png)
