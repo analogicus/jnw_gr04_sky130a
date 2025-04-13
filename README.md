@@ -20,7 +20,7 @@ The design is split into two different parts: a circuit that generates a current
 ## ERRORS
 LVS does not pass, we think this is because the layout file for the Schmitt trigger is wrong, we have attempted to fix this but are unsure wether or not it was correct.
 GDS does not pass, some errors with paths, according to the output, the 3D design file has been generated locally.
-Digital Block is not present in top level file, but we have made it.
+Digital Block is not present in top level file, but we have made it. It can be found in design/JNW_GR04_SKY130A/temp_to_dig.mag
 
 ## Layout (Digital Block not included)
 Picture of the analog circuit layout
