@@ -75,7 +75,7 @@ C {devices/lab_wire.sym} -570 -260 0 0 {name=p7 sig_type=std_logic lab=Vbias
 C {devices/lab_wire.sym} -450 -80 0 0 {name=p9 sig_type=std_logic lab=VIN_drain}
 C {devices/lab_wire.sym} -380 -210 0 0 {name=p10 sig_type=std_logic lab=V_diff_pair_bias}
 C {devices/lab_wire.sym} -350 -140 0 0 {name=p6 sig_type=std_logic lab=VDD}
-C {devices/iopin.sym} -240 -50 0 0 {name=p8 lab=Vo}
+C {devices/opin.sym} -240 -50 0 0 {name=p8 lab=Vo}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} -420 -310 0 0 {name=x4}
 C {JNW_ATR_SKY130A/JNWATR_PCH_4C1F2.sym} -530 -310 0 1 {name=x5}
 C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} -570 -250 1 0 {name=x2 }

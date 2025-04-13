@@ -17,9 +17,9 @@
 *-----------------------------------------------------------------
 .param TRF = 10p
 .param AVDD = {vdda}
-
 .param PERIOD_CLK = 48n
 .param PW_CLK = PERIOD_CLK/2
+
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
@@ -27,11 +27,9 @@ VSS  VSS  0     dc 0
 VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
 *VRST RST  VSS  pwl 0 {AVDD} 60n {AVDD} 61n 0
 *VOUT  out  0  dc  0
-
-
-
 VCLK clk 0 dc 0 pulse (0 {AVDD} 0 {TRF} {TRF} {PW_CLK} {PERIOD_CLK})
 *VRESET reset VSS PULSE (0 1.8 2u 1n 1n 100n 5u)
+
 *-----------------------------------------------------------------
 * DUT (Device Under Test)
 *-----------------------------------------------------------------
@@ -80,14 +78,6 @@ unset askquit
 pre_set auto_bridge_d_out =
      + ( ".model auto_dac dac_bridge(out_low = 0.0 out_high = 1.8)"
      +   "auto_bridge%d [ %s ] [ %s ] auto_dac" )
-
-
-
-
-
-* Run transient simulation for a longer time (50n seconds)
-*tran 1n 500n 1p
-
 
 
 

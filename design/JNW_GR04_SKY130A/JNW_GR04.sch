@@ -63,24 +63,25 @@ N 630 -750 650 -750 {lab=VSS}
 N 630 -550 650 -550 {lab=VSS}
 N 790 -420 810 -420 {lab=RESET}
 N 630 -490 630 -350 {lab=VSS}
-N 670 -640 950 -640 {lab=Vref}
-N 950 -640 1010 -640 {lab=Vref}
 N 640 -610 720 -610 {lab=I_PTAT}
-N 720 -610 720 -580 {lab=I_PTAT}
-N 720 -580 740 -580 {lab=I_PTAT}
-N 930 -580 960 -580 {lab=I_PTAT_REDUCED}
-N 830 -830 830 -630 {lab=VDD_1V8}
 N 670 -490 830 -490 {lab=VSS}
 N 830 -530 830 -490 {lab=VSS}
+N 830 -560 830 -530 {lab=VSS}
+N 720 -610 740 -610 {lab=I_PTAT}
+N 930 -610 960 -610 {lab=I_PTAT_REDUCED}
+N 830 -830 830 -660 {lab=VDD_1V8}
+N 960 -640 1010 -640 {lab=Vref}
+N 960 -680 960 -640 {lab=Vref}
+N 670 -680 960 -680 {lab=Vref}
 C {devices/ipin.sym} 420 -830 0 0 {name=p1 lab=VDD_1V8}
 C {devices/ipin.sym} 410 -350 0 0 {name=p3 lab=VSS}
 C {devices/opin.sym} 1530 -680 0 0 {name=p4 lab=OUT}
-C {devices/lab_wire.sym} 670 -640 0 0 {name=p5 sig_type=std_logic lab=Vref}
+C {devices/lab_wire.sym} 670 -680 0 0 {name=p5 sig_type=std_logic lab=Vref}
 C {JNW_GR04_SKY130A/PTAT.sym} 450 -610 0 0 {name=x2}
 C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 810 -420 0 0 {name=x8}
 C {devices/lab_wire.sym} 540 -350 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
-C {devices/lab_wire.sym} 650 -610 0 0 {name=p8 sig_type=std_logic lab=I_PTAT}
+C {devices/lab_wire.sym} 600 -610 0 1 {name=p8 sig_type=std_logic lab=I_PTAT}
 C {devices/lab_wire.sym} 790 -420 0 0 {name=p2 sig_type=std_logic lab=RESET}
 C {JNW_TR_SKY130A/JNWTR_DFRNQNX1_CV.sym} 1320 -620 0 0 {name=x6 }
 C {JNW_GR04_SKY130A/Opamp_test.sym} 1080 -620 0 0 {name=x1}
@@ -92,6 +93,6 @@ C {devices/lab_wire.sym} 1320 -620 0 0 {name=p11 sig_type=std_logic lab=RESET
 }
 C {JNW_TR_SKY130A/JNWTR_RPPO8.sym} 670 -790 1 0 {name=x3 }
 C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} 670 -590 1 0 {name=x4 }
-C {JNW_GR04_SKY130A/Current_mirror.sym} 890 -580 0 0 {name=x5}
-C {devices/lab_wire.sym} 960 -610 0 0 {name=p6 sig_type=std_logic lab=I_PTAT_REDUCED
+C {JNW_GR04_SKY130A/Current_mirror.sym} 890 -610 0 0 {name=x5}
+C {devices/lab_wire.sym} 1010 -610 0 0 {name=p6 sig_type=std_logic lab=I_PTAT_REDUCED
 }
