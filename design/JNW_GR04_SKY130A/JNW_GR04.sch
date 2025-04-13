@@ -77,15 +77,15 @@ C {devices/ipin.sym} 420 -830 0 0 {name=p1 lab=VDD_1V8}
 C {devices/ipin.sym} 410 -350 0 0 {name=p3 lab=VSS}
 C {devices/opin.sym} 1530 -680 0 0 {name=p4 lab=OUT}
 C {devices/lab_wire.sym} 670 -680 0 0 {name=p5 sig_type=std_logic lab=Vref}
-C {JNW_GR04_SKY130A/PTAT.sym} 450 -610 0 0 {name=x2}
-C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 810 -420 0 0 {name=x8}
+C {JNW_GR04_SKY130A/PTAT.sym} 450 -610 0 0 {name=xp1}
+C {JNW_ATR_SKY130A/JNWATR_NCH_2C1F2.sym} 810 -420 0 0 {name=xr1}
 C {devices/lab_wire.sym} 540 -350 0 0 {name=p7 sig_type=std_logic lab=VSS
 }
 C {devices/lab_wire.sym} 600 -610 0 1 {name=p8 sig_type=std_logic lab=I_PTAT}
 C {devices/lab_wire.sym} 790 -420 0 0 {name=p2 sig_type=std_logic lab=RESET}
 C {JNW_TR_SKY130A/JNWTR_DFRNQNX1_CV.sym} 1320 -620 0 0 {name=x6 }
-C {JNW_GR04_SKY130A/Opamp_test.sym} 1080 -620 0 0 {name=x1}
-C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 960 -390 0 0 {name=x7}
+C {JNW_GR04_SKY130A/Opamp_test.sym} 1080 -620 0 0 {name=xp3}
+C {JNW_TR_SKY130A/JNWTR_CAPX1.sym} 960 -390 0 0 {name=xc1}
 C {devices/lab_wire.sym} 1160 -620 0 1 {name=p9 sig_type=std_logic lab=COMP
 }
 C {JNW_TR_SKY130A/JNWTR_SCX1_CV.sym} 1200 -620 0 0 {name=x9}
@@ -93,6 +93,6 @@ C {devices/lab_wire.sym} 1320 -620 0 0 {name=p11 sig_type=std_logic lab=RESET
 }
 C {JNW_TR_SKY130A/JNWTR_RPPO8.sym} 670 -790 1 0 {name=x3 }
 C {JNW_TR_SKY130A/JNWTR_RPPO4.sym} 670 -590 1 0 {name=x4 }
-C {JNW_GR04_SKY130A/Current_mirror.sym} 890 -610 0 0 {name=x5}
+C {JNW_GR04_SKY130A/Current_mirror.sym} 890 -610 0 0 {name=xp2}
 C {devices/lab_wire.sym} 1010 -610 0 0 {name=p6 sig_type=std_logic lab=I_PTAT_REDUCED
 }

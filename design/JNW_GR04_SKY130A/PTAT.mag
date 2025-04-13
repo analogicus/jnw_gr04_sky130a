@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1744561517
+timestamp 1744566163
 << locali >>
 rect -5108 7250 -4444 7258
 rect -5108 7070 -4974 7250
@@ -342,7 +342,7 @@ timestamp 1734044400
 transform 0 1 -4596 -1 0 7162
 box -184 -128 1336 928
 use Opamp_test  xo1
-timestamp 1744371203
+timestamp 1744566163
 transform 1 0 -6922 0 1 -246
 box 2222 1594 6906 6420
 use JNWTR_RPPO16  xr1 ~/pro/aicex/ip/jnw_gr04_sky130a/design/JNW_TR_SKY130A
