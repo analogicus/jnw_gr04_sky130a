@@ -12,10 +12,12 @@
 
 PREFIX=
 LIB=JNW_GR04_SKY130A
-CELL=JNW_GR04
-CELL=JNW_GR04
+
+#CELL=JNW_GR04
+CELL=PTAT
 
 #- Provide cells you want to check for the lvsall drcall commands
-CELLS = JNW_GR04
+CELLS = PTAT
+
 
 include ../tech/make/core.make
