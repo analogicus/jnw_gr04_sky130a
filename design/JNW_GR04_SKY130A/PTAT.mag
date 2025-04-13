@@ -325,7 +325,7 @@ use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  xb1
 timestamp 1737662937
 transform 1 0 -1290 0 1 4
 box 0 0 1340 1340
-use JNWTR_CAPX1  xc1 ~/pro/aicex/ip/jnw_gr04_sky130a/design/JNW_TR_SKY130A
+use JNWTR_CAPX1  xc1 JNW_TR_SKY130A
 timestamp 1737500400
 transform 1 0 -1700 0 1 6700
 box 0 0 1080 1080
