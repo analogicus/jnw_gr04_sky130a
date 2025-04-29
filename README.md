@@ -59,6 +59,12 @@ We can then estimate current based on the below plot (this can be done externall
 
 ![dec_b vs Temperature](sim/Comparator/dec_b_vs_temp.png)
 
+
+![dec_b vs Temperature etc](sim/Comparator/DecB_all_etc.png)
+
+
+![dec_b vs Temperature mc](sim/Comparator/DecB_all_mc.png)
+
 # Problems present
 The current at negative 40 degrees is really low - as shown on the above plot, the comparator takes alot more clock cycles to give logical high on the output.
 We can fix this by adding a offset to shift the current higher.
